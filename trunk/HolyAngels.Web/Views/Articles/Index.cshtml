@@ -1,0 +1,34 @@
+﻿@using HolyAngels.Web.Areas.Manage.Models
+@using HolyAngels.Web.Domains
+@using MvcContrib.UI.Grid
+@using MvcContrib.UI.Pager
+
+@model  PaginationModel<ArticleModel>
+           
+<script language="javascript" type="text/javascript">
+    $(function () {
+        
+    });
+</script>
+
+<div style="padding: 10px 0px 10px 15px">
+    @Html.Pager(Model.Data)
+</div>
+
+@Html.Grid(Model.Data).Columns(
+        columns =>
+        {
+            columns.For(d =>
+                "<div>" +
+                Html.ActionLink(d.Title, new T4MVC_ActionResult("", MVC.Articles.Name, MVC.Articles.ActionNames.Viewer).AddRouteValue("idKey", d.IdKey.ToString())) +
+                "by: " + d.Author +
+                "<div>" + d.Summary + "</div>" +
+                "</div>"                
+                ).Named("").DoNotEncode();
+        }).Sort(Model.SortOptions)
+
+<div style="padding: 10px 0px 10px 15px">
+    @Html.Pager(Model.Data)
+</div>
+
+

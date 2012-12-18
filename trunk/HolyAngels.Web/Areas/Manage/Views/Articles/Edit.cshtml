@@ -1,0 +1,68 @@
+﻿@model HolyAngels.Web.Areas.Manage.Models.ArticleModel
+<script language="javascript" type="text/javascript">
+    $(function () {
+        HA.manageArticles.initEditPage(dpOptions, rteOptions);
+    });
+</script>
+
+<div style="padding: 10px 0px 0px 15px">
+    <h3>@Model.SubTitle</h3>
+</div>
+
+@using (Html.BeginForm(new T4MVC_ActionResult(MVC.Manage.Name, MVC.Manage.Articles.Name, MVC.Manage.Articles.ActionNames.Edit), FormMethod.Post, new { @id = "haForm", @name = "haForm" }))
+{
+    <div style="padding: 10px 0px 5px 15px">
+    <p>
+        @Html.ValidationMessage("Error")
+    </p>
+    <p>
+    @Html.LabelFor(m => m.Title)
+    @Html.ValidationMessageFor(m => m.Title)
+    @Html.TextBoxFor(m => m.Title)
+    </p>
+
+    <p>
+    @Html.LabelFor(m => m.Summary)
+    @Html.TextAreaFor(m => m.Summary, new { @rows = 5, @columns = 5 })
+    @Html.ValidationMessageFor(m => m.Summary)
+    </p>
+
+    <p>
+    @Html.LabelFor(m => m.Description)
+    @Html.TextAreaFor(m => m.Description, new { @rows = 5, @columns = 5, @class = "rtarea" })
+    @Html.ValidationMessageFor(m => m.Description)
+    </p>
+
+    <p>
+    @Html.LabelFor(m => m.Author)
+    @Html.TextBoxFor(m => m.Author)
+    @Html.ValidationMessageFor(m => m.Author)
+    </p>
+
+    <p>
+    @Html.LabelFor(m => m.StartDate)
+    @Html.TextBoxFor(m => m.StartDate)
+    @Html.ValidationMessageFor(m => m.StartDate)
+    </p>
+
+    <p>
+    @Html.LabelFor(m => m.EndDate)
+    @Html.TextBoxFor(m => m.EndDate)
+    @Html.ValidationMessageFor(m => m.EndDate)
+    </p>
+
+    <p>
+    @if (Context.User.IsInRole("Content Approver"))
+    {
+        @Html.LabelFor(m => m.Approved)
+        @Html.CheckBoxFor(m => m.Approved)
+        @Html.ValidationMessageFor(m => m.Approved)
+    }
+    </p>
+    @Html.HiddenFor(m => m.IdKey)
+    </div>
+    <div style="padding: 10px 0px 5px 15px">
+        <a href="javascript:Stub();" id="save" name="save">Save</a>
+    </div>
+
+}

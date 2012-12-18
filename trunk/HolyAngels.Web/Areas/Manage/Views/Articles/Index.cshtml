@@ -1,0 +1,32 @@
+﻿@using HolyAngels.Web.Areas.Manage.Models
+@using HolyAngels.Web.Domains
+@using MvcContrib.UI.Grid
+@using MvcContrib.UI.Pager
+
+@model PaginationModel<ArticleModel>
+           
+<script language="javascript" type="text/javascript">
+    $(function () {
+        HA.manageArticles.initListPage();
+    });
+</script>
+
+<div style="padding: 10px 0px 10px 15px">
+    @Html.ActionLink("Add New Article", new T4MVC_ActionResult(@MVC.Manage.Name,  @MVC.Manage.Articles.Name, @MVC.Manage.Articles.ActionNames.Add))
+    <br />
+    @Html.Pager(Model.Data)
+</div>
+
+@Html.Grid(Model.Data).Columns(
+        columns => {columns.For(d => d.Title).Sortable(true).SortColumnName(Constants.Sort_Column_Title);
+        columns.For(d => d.Summary).Sortable(true).SortColumnName(Constants.Sort_Column_Summary);
+        columns.For(d => (d.Approved)? "approvded": "").DoNotEncode().Named("Status").Sortable(true).SortColumnName(Constants.Sort_Column_Approved);
+        columns.For(d =>
+            Html.ActionLink("Edit", new T4MVC_ActionResult(MVC.Manage.Name, MVC.Manage.Articles.Name, MVC.Manage.Articles.ActionNames.Edit).AddRouteValue("idKey", d.IdKey))).Named("").DoNotEncode();
+        }).Sort(Model.SortOptions)
+
+<div style="padding: 10px 0px 10px 15px">
+    @Html.Pager(Model.Data)
+    <br />
+    @Html.ActionLink("Add New Article", new T4MVC_ActionResult(@MVC.Manage.Name,  @MVC.Manage.Articles.Name, @MVC.Manage.Articles.ActionNames.Add))
+</div>

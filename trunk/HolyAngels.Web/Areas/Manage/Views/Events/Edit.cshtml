@@ -1,0 +1,73 @@
+﻿@model HolyAngels.Web.Areas.Manage.Models.EventModel
+<script language="javascript" type="text/javascript">
+    $(function () {
+        HA.manageEvents.initEditPage(dpOptions, rteOptions);
+    });
+</script>
+
+<div style="padding: 10px 0px 0px 15px">
+    <h3>@Model.SubTitle</h3>
+</div>
+
+@using (Html.BeginForm(new T4MVC_ActionResult(MVC.Manage.Name, MVC.Manage.Events.Name, MVC.Manage.Events.ActionNames.Edit), FormMethod.Post, new { @id = "haForm", @name = "haForm" }))
+{
+    <div style="padding: 10px 0px 5px 15px">
+    <p>
+        @Html.ValidationMessage("Error")
+    </p>
+    <p>
+    @Html.LabelFor(m => m.Title)
+    @Html.TextBoxFor(m => m.Title)
+    @Html.ValidationMessageFor(m => m.Title)
+    </p>
+    <p>
+    @Html.LabelFor(m => m.Location)
+    @Html.TextBoxFor(m => m.Location)
+    @Html.ValidationMessageFor(m => m.Location)
+    </p>
+    <p>
+    @Html.LabelFor(m => m.Speakers)
+    @Html.TextBoxFor(m => m.Speakers)
+    @Html.ValidationMessageFor(m => m.Speakers)
+    </p>
+    <p>
+    @Html.LabelFor(m => m.Description)
+    @Html.TextAreaFor(m => m.Description, new { @rows = 10, @columns = 10, @class = "rtarea" })
+    @Html.ValidationMessageFor(m => m.Description)
+    </p>
+    <p>
+    @Html.LabelFor(m => m.StartDate)
+    @Html.TextBoxFor(m => m.StartDate)
+    @Html.ValidationMessageFor(m => m.StartDate)
+    </p>
+    <p>
+    @Html.LabelFor(m => m.EndDate)
+    @Html.TextBoxFor(m => m.EndDate)
+    @Html.ValidationMessageFor(m => m.EndDate)
+    </p>
+    <p>
+    @Html.LabelFor(m => m.StartTime)
+    @Html.DropDownListFor(m => m.StartTime, Model.Times)
+    @Html.ValidationMessageFor(m => m.StartTime)
+    </p>
+    <p>
+    @Html.LabelFor(m => m.EndTime)
+    @Html.DropDownListFor(m => m.EndTime, Model.Times)
+    @Html.ValidationMessageFor(m => m.EndTime)
+    </p>
+
+    <p>
+    @if (Context.User.IsInRole("Content Approver"))
+    {
+        @Html.LabelFor(m => m.Approved)
+        @Html.CheckBoxFor(m => m.Approved)
+        @Html.ValidationMessageFor(m => m.Approved)
+    }
+    </p>
+    @Html.HiddenFor(m => m.IdKey)
+    </div>
+    <div style="padding: 10px 0px 5px 15px">
+        <a href="javascript:Stub();" id="save" name="save">Save</a>
+    </div>
+
+}

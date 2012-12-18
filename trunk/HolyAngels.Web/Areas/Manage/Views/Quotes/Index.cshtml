@@ -1,0 +1,32 @@
+﻿@using HolyAngels.Web.Areas.Manage.Models
+@using HolyAngels.Web.Domains
+@using MvcContrib.UI.Grid
+@using MvcContrib.UI.Pager
+
+@model PaginationModel<QuoteModel>
+           
+<script language="javascript" type="text/javascript">
+    $(function () {
+        HA.manageQuotes.initListPage();
+    });
+</script>
+
+<div style="padding: 10px 0px 10px 15px">
+    @Html.ActionLink("Add New Quote", new T4MVC_ActionResult(@MVC.Manage.Name, @MVC.Manage.Quotes.Name, @MVC.Manage.Quotes.ActionNames.Add))
+    <br />
+    @Html.Pager(Model.Data)
+</div>
+
+@Html.Grid(Model.Data).Columns(
+        columns => {columns.For(d => d.Source).Sortable(true).SortColumnName(Constants.Sort_Column_Source);
+        columns.For(d => d.Description);
+        columns.For(d =>
+            Html.ActionLink("Edit", new T4MVC_ActionResult(MVC.Manage.Name, MVC.Manage.Quotes.Name, MVC.Manage.Quotes.ActionNames.Edit).AddRouteValue("idKey", d.IdKey))
+            ).Named("").DoNotEncode();
+        }).Sort(Model.SortOptions)
+
+<div style="padding: 10px 0px 10px 15px">
+    @Html.Pager(Model.Data)
+    <br />
+    @Html.ActionLink("Add New Quote", new T4MVC_ActionResult(@MVC.Manage.Name, @MVC.Manage.Quotes.Name, @MVC.Manage.Quotes.ActionNames.Add))
+</div>

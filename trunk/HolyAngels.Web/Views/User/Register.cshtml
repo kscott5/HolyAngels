@@ -1,0 +1,37 @@
+﻿@model HolyAngels.Web.Areas.Manage.Models.RegisterModel
+<script language="javascript" type="text/javascript">
+    $(function () {
+        HA.common.bindClicks();
+    });
+</script>
+<div style="padding: 0px 0px 0px 10px">
+    <h3>@Model.SubTitle</h3>
+</div>
+
+@using (Html.BeginForm(MVC.User.ActionNames.Register, MVC.User.Name, FormMethod.Post, new { @name = "haForm", @id = "haForm" }))
+{   
+    <p>
+        @Html.ValidationMessage("Error")        
+    </p>
+    <p>
+    @Html.LabelFor(m => m.Email) 
+    @Html.TextBoxFor(m => m.Email)
+    @Html.ValidationMessageFor(m => m.Email)
+    </p>
+    
+    <p>
+    @Html.LabelFor(m => m.Password) 
+    @Html.PasswordFor(m => m.Password)
+    @Html.ValidationMessageFor(m => m.Password)
+    </p>
+    
+    <p>
+    @Html.LabelFor(m => m.ConfirmPassword)     
+    @Html.PasswordFor(m => m.ConfirmPassword)
+    @Html.ValidationMessageFor(m => m.ConfirmPassword)
+    </p>
+    
+    <p>
+    <a href="javascript:Stub();" name="register" id="register">Register</a>
+    </p>
+}

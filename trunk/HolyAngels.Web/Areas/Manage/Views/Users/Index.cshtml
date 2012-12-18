@@ -1,0 +1,37 @@
+﻿@using HolyAngels.Web.Areas.Manage.Models
+@using HolyAngels.Web.Domains
+@using MvcContrib.UI.Grid
+@using MvcContrib.UI.Pager
+
+@model PaginationModel<ManageUserModel>
+
+
+<script language="javascript" type="text/javascript">
+    $(function () {
+        HA.manageUsers.initListPage();
+    });
+</script>
+
+<div style="padding: 10px 0px 5px 15px">
+    @Html.ActionLink("Add New User", new T4MVC_ActionResult ( @MVC.Manage.Name, @MVC.Manage.Users.Name, @MVC.Manage.Users.ActionNames.Add))
+    <br />
+    @Html.Pager(Model.Data)
+</div>
+
+
+@Html.Grid(Model.Data).Columns(
+        columns => {columns.For(d => d.LastName).Sortable(true).SortColumnName(Constants.Sort_Column_LastName);
+        columns.For(d => d.FirstName).Sortable(true).SortColumnName(Constants.Sort_Column_FirstName);
+        columns.For(d => d.ScreenName).Sortable(true).SortColumnName(Constants.Sort_Column_ScreenName);
+        columns.For(d => d.Email).Sortable(true).SortColumnName(Constants.Sort_Column_Email);
+        columns.For(d => 
+            Html.ActionLink("Profile", new T4MVC_ActionResult ( MVC.Manage.Name, MVC.Manage.Users.Name, MVC.Manage.Users.ActionNames.Edit).AddRouteValue("idKey", d.IdKey)) 
+            + "<br/>" +
+            Html.ActionLink("Password", new T4MVC_ActionResult ( MVC.Manage.Name, MVC.Manage.Users.Name, MVC.Manage.Users.ActionNames.ChangePassword).AddRouteValue("idKey", d.IdKey))).Named("").DoNotEncode();
+        }).Sort(Model.SortOptions)
+
+<div style="padding: 10px 0px 5px 15px">
+    @Html.Pager(Model.Data)
+    <br />
+    @Html.ActionLink("Add New User", new T4MVC_ActionResult ( @MVC.Manage.Name, @MVC.Manage.Users.Name, @MVC.Manage.Users.ActionNames.Add))
+</div>

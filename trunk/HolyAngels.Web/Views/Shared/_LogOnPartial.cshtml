@@ -1,0 +1,15 @@
+﻿@if (Context.User.Identity.IsAuthenticated)
+{
+    <text><strong>Welcome @Context.User.Identity.Name!</strong>
+    &nbsp;
+     [ @Html.ActionLink("Log off", new T4MVC_ActionResult("", MVC.Facebook.Name, MVC.Facebook.ActionNames.Deauthorize)) ]
+    </text>
+}
+else
+{
+    @:[ 
+        <span>
+            <a id="objFBButton" name="objFBButton" href="https://www.facebook.com/dialog/oauth/?client_id=121402298021026&redirect_uri=http://localhost:8181/user/oauth&scope=publish_actions&response_type=code&display=popup"> <img src="@Links.Content.images.social_facebook_14_png" alt="Connect with Facebook" /></a>Connect via Facebook
+        </span>
+    @:]    
+}

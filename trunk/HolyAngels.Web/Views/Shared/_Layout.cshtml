@@ -1,0 +1,150 @@
+@model HolyAngels.Web.Areas.Manage.Models.BaseModel
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <!-- 
+    Design by http://www.styleshout.com
+    -->
+    <title>@Model.PageTitle</title>
+		<link href="@Url.Content("~/Content/da.openid.css")" rel="stylesheet" type="text/css" />
+    <meta name="AUTHOR" content="@Model.MetaAuthor" />
+    <meta name="KEYWORDS" content="@Model.MetaKeywords" />
+    <meta name="SUBJECT" content="@Model.MetaSubject" />
+    <meta name="DESCRIPTION" content="@Model.MetaDescription"/>
+    
+    <link href="@Links.Content.fullcalendar_css" rel="Stylesheet" type="text/css" />
+    <link href="@Links.Content.fullcalendar_print_css" rel="Stylesheet" type="text/css" />
+    <link href="/Content/themes/base/jquery.ui.all.css" rel="Stylesheet" type="text/css" />
+    <link href="@Links.Content.adt_higherground.style_css" rel="stylesheet" type="text/css" />
+    <link href="@Links.Content.rte_css" rel="Stylesheet" type="text/css" />
+
+    <script src="@Links.Scripts.jquery_1_6_2_min_js" type="text/javascript"></script>
+    <script src="@Links.Scripts.jquery_ui_1_8_16_custom_min_js" type="text/javascript"></script>
+    <script src="@Links.Scripts.modernizr_1_7_min_js" type="text/javascript"></script>
+    <script src="@Links.Scripts.fullcalendar_min_js" type="text/javascript"></script>
+    <script src="@Links.Scripts.jquery_rte_min_js" type="text/javascript"></script>
+    <script src="@Links.Scripts.ha_js" type="text/javascript"></script>
+    
+    <script language="javascript" type="text/javascript">
+        /* Options for richtext editor */
+        var rteOptions = { content_css_url: "@Links.Content.rte_css", media_url: "@Links.Content.images.Url()" };
+
+        /* Options for date picker */
+        var dpOptions = { showOn: 'both'};
+    </script>
+</head>
+<body>
+    <div id="dialog">
+    </div>
+
+    <!-- wrap starts here -->
+    <div id="wrap">
+        <div id="top-bg">
+        </div>
+        <!--header -->
+        <div id="header">
+            <h1 id="logo-text">
+                <a href="" title="">@Model.SiteName</a></h1>
+            <h2 id="slogan">
+                @Model.SiteSlogan</h2>
+            <div id="header-links">
+                @Html.Partial("_LogOnPartial")
+            </div>
+            <!--header ends-->
+        </div>
+        <div id="header-photo">
+        </div>
+        <div id="nav">
+            <ul>                
+                <li>@Html.ActionLink("Home", new T4MVC_ActionResult ( "", @MVC.Home.Name, ""))</li>
+                <li>@Html.ActionLink("Ministries", new T4MVC_ActionResult ( "", @MVC.Ministry.Name, ""))</li>
+                <li>@Html.ActionLink("Events", new T4MVC_ActionResult ( "", @MVC.EventCalendar.Name, ""))</li>
+                <li>@Html.ActionLink("Articles", new T4MVC_ActionResult ( "", @MVC.Articles.Name, ""))</li>
+                <li>@Html.ActionLink("About Us", new T4MVC_ActionResult ( "", @MVC.Home.Name, @MVC.Home.ActionNames.About))</li>
+                <li>@Html.ActionLink("Contact", new T4MVC_ActionResult ("", @MVC.Home.Name, @MVC.Home.ActionNames.Contact))</li>
+            </ul>
+        </div>
+        <!-- content-wrap starts -->
+        <div id="content-wrap">
+            <div id="sidebar" style="float: left">
+                <div style="padding: 0px 0px 0px 5px">
+                    <h3>General</h3>
+                    </div>
+                    
+                <ul>
+                    <li>@Html.ActionLink("African American Christianity", new T4MVC_ActionResult ( "", @MVC.Home.Name, @MVC.Home.ActionNames.Christianity))</li>
+                    <li>@Html.ActionLink("Church History", new T4MVC_ActionResult ( "", @MVC.Home.Name, @MVC.Home.ActionNames.History))</li>
+                    <li>@Html.ActionLink("Service Times", new T4MVC_ActionResult ( "", @MVC.Home.Name, @MVC.Home.ActionNames.About))</li>
+                    <li>@Html.ActionLink("Church Mural", new T4MVC_ActionResult ( "", @MVC.Home.Name, @MVC.Home.ActionNames.Mural))</li>
+                </ul>
+                <br />
+                
+                @if (Context.User.Identity.IsAuthenticated)
+                {   
+                    <div style="padding: 0px 0px 0px 5px">
+                    <h3>User</h3>
+                    </div>
+                                     
+                    <ul>
+                    <li>@Html.ActionLink("Profile", new T4MVC_ActionResult(@MVC.Manage.Name, @MVC.Manage.Users.Name, @MVC.Manage.Users.ActionNames.Edit).AddRouteValue("idKey", @Model.UserIdKey.ToString()))</li>
+                    <li>@Html.ActionLink("Password", new T4MVC_ActionResult(@MVC.Manage.Name, @MVC.Manage.Users.Name, @MVC.Manage.Users.ActionNames.ChangePassword).AddRouteValue("idKey", @Model.UserIdKey.ToString()))</li>
+                    </ul>
+                }
+                <br />
+
+                @if (Context.User.Identity.IsAuthenticated && !Context.User.IsInRole("Basic"))
+                {                
+                    <div style="padding: 0px 0px 0px 5px">
+                    <h3>Manage</h3>
+                    </div>
+                    <ul>
+                        <li>@Html.ActionLink("Events", new T4MVC_ActionResult(@MVC.Manage.Name, @MVC.Manage.Events.Name, ""))</li>                        
+                        <li>@Html.ActionLink("Quotes", new T4MVC_ActionResult(@MVC.Manage.Name, @MVC.Manage.Quotes.Name, ""))</li>                            
+                    @if (Context.User.IsInRole("Administrator"))
+                    {                            
+                        <li>@Html.ActionLink("Users", new T4MVC_ActionResult(@MVC.Manage.Name, @MVC.Manage.Users.Name, ""))</li>
+                    }
+                        
+                    @if (Context.User.IsInRole("Ministry"))
+                    {
+                        <li>@Html.ActionLink("Ministries", new T4MVC_ActionResult(@MVC.Manage.Name, @MVC.Manage.Ministries.Name, ""))</li>
+                    }
+                        
+                    @if (Context.User.IsInRole("Content Publisher") || Context.User.IsInRole("Content Approver"))
+                    {
+                        <li>@Html.ActionLink("Articles", new T4MVC_ActionResult(@MVC.Manage.Name, @MVC.Manage.Articles.Name, ""))</li>
+                    }
+                    </ul>
+                }
+                
+                <div id="fb-root"></div>
+<script>    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+    } (document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="fb-like" data-href="http://www.holyangels.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
+            </div>
+            <!-- main start -->
+            <div id="main">
+                @RenderBody()
+            </div>
+            <!-- end main -->
+        </div>
+        <!-- content-wrap ends-->
+        <!-- footer starts -->
+        <div id="footer-wrap">
+            <p>
+                Development by KS Technologies <br />
+            </p>
+            <p>CSS by <a href="http://www.styleshout.com">styleshout (To remove link send donation to ealigam@gmail.com)</a>.</p>            
+        </div>
+        <!-- footer ends here -->
+    </div>
+    <!-- end wrap -->
+</body>
+</html>
+

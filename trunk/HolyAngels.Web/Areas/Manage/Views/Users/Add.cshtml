@@ -1,0 +1,90 @@
+﻿@model HolyAngels.Web.Areas.Manage.Models.ManageUserModel
+@using HolyAngels.Web.Areas.Manage.Models
+
+<script language="javascript" type="text/javascript">
+    $(function () {
+        HA.manageUsers.initAddPage();
+    });
+</script>
+
+<div style="padding: 10px 0px 0px 15px">
+    <h3>@Model.SubTitle</h3>
+</div>
+
+@using (@Html.BeginForm(MVC.Manage.Users.ActionNames.Add, MVC.Manage.Users.Name, FormMethod.Post, new { @name = "haForm", @id = "haForm" }))
+{
+    <div style="padding: 10px 0px 5px 15px">
+    <p>
+        @Html.ValidationMessage("Error")
+    </p>
+
+    <p>
+    @Html.LabelFor(m => m.FirstName)
+    @Html.TextBoxFor(m => m.FirstName)
+    </p>
+    <p>
+    @Html.LabelFor(m => m.LastName)
+    @Html.TextBoxFor(m => m.LastName)
+    </p>
+    <p>
+    @Html.LabelFor(m => m.ScreenName)
+    @Html.TextBoxFor(m => m.ScreenName)
+    </p>
+    <p>
+    @Html.LabelFor(m => m.Email)
+    @Html.TextBoxFor(m => m.Email)
+    @Html.ValidationMessageFor(m => m.Email)
+    </p>
+    <p>
+    @Html.LabelFor(m => m.Password)
+    @Html.PasswordFor(m => m.Password)
+    @Html.ValidationMessageFor(m => m.Password)
+    </p>
+    <p>
+    @Html.LabelFor(m => m.ConfirmPassword)
+    @Html.PasswordFor(m => m.ConfirmPassword)
+    @Html.ValidationMessageFor(m => m.ConfirmPassword)
+    </p>
+    <p>
+    @Html.LabelFor(m => m.Roles) 
+    <select name="Roles" id="Roles" size="6" multiple="multiple">
+    @foreach (RoleModel item in Model.MultiSelectRoleList.Items)
+    {
+        if (Model.Roles.Find(r => r.IdKey == item.IdKey) != null)
+        {
+            <option value="@item.IdKey" selected="selected">@item.Name</option>
+        }
+        else
+        {
+            <option value="@item.IdKey">@item.Name</option>
+        }
+    }
+    </select>
+    @Html.ValidationMessageFor(m => m.Roles)
+    </p>
+    @if (Context.User.IsInRole("Administrator"))
+    {
+        <p>
+        @Html.LabelFor(m => m.Ministries)    
+        <select name="Ministries" id="Ministries" size="6" multiple="multiple">
+        @foreach (MinistryModel item in Model.MultiSelectMinistryList.Items)
+        {
+            if (Model.Ministries.Find(m => m.IdKey == item.IdKey) != null)
+            {
+                <option value="@item.IdKey" selected="selected">@item.Name</option>
+            }
+            else
+            {
+                <option value="@item.IdKey">@item.Name</option>
+            }
+        }
+        </select>
+        @Html.ValidationMessageFor(m => m.Ministries)
+        </p>
+    }
+    </div>
+    <div style="padding: 10px 0px 5px 15px">
+        <a href="javascript:Stub();" id="save" name="save">Save</a>
+        <a href="javascript:Stub();" id="clear" name="clear">Clear</a>
+    </div>
+}

@@ -1,0 +1,46 @@
+
+.frameBody
+{
+    font-family:Verdana, Arial, sans-serif;
+    font-size:70%;
+    margin:0;
+	padding:1em;
+    height:100%;
+    background-color: White !important;
+}
+
+.frameBody p
+{
+    padding:0 !important;
+}
+
+.rte-zone
+{
+	width:350px !important;
+	margin:0 !important;
+	padding:0 !important;
+	height:160px !important;
+	border:1px #999 solid !important;
+    clear:both !important;
+}
+
+.rte-edm {
+	display:block !important;
+}
+
+.rte-toolbar { 
+	overflow:hidden !important; 
+}
+
+.rte-toolbar a, .rte-toolbar a img {
+	border:0 !important;
+}
+
+.rte-toolbar p {
+    float:left !important;
+    margin:0 !important;
+    padding-right:5px !important;
+}
+
+
+

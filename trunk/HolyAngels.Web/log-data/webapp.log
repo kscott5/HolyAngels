@@ -1,0 +1,592 @@
+2012-03-29 12:43:37,344 [48] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 115
+2012-03-29 12:43:39,068 [48] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 115
+2012-03-29 12:44:16,321 [44] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 115
+2012-03-29 12:44:16,367 [44] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 115
+2012-03-29 12:44:17,507 [48] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 115
+2012-03-29 12:44:17,547 [47] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 115
+2012-03-29 12:44:17,548 [44] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 115
+2012-03-29 12:44:17,561 [46] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 115
+2012-03-29 12:44:17,562 [45] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 115
+2012-03-29 12:44:17,690 [48] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 115
+2012-03-29 12:44:18,546 [47] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 115
+2012-03-29 12:44:18,601 [47] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 115
+2012-03-29 12:44:18,791 [44] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 115
+2012-03-29 12:44:18,819 [45] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 115
+2012-03-29 12:44:19,707 [46] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 115
+2012-03-29 12:44:19,733 [48] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 115
+2012-03-29 12:44:19,733 [44] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 115
+2012-03-29 12:44:19,748 [45] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 115
+2012-03-29 12:44:19,861 [46] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 115
+2012-03-29 12:56:43,704 [48] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 115
+2012-03-29 12:56:45,958 [48] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 115
+2012-03-29 13:06:14,290 [11] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 115
+2012-03-29 13:06:27,229 [11] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 115
+2012-03-29 13:06:36,737 [44] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 115
+2012-03-29 13:06:37,998 [11] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 115
+2012-03-29 13:06:38,018 [11] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 115
+2012-03-29 13:06:55,712 [44] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 115
+2012-03-29 13:07:10,672 [11] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 115
+2012-03-29 13:07:11,046 [11] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.Register
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Violation of UNIQUE KEY constraint 'UK_UsersEmail'. Cannot insert duplicate key in object 'dbo.Users'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Mapping.Update.Internal.DynamicUpdateCommand.Execute(UpdateTranslator translator, EntityConnection connection, Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+   --- End of inner exception stack trace ---
+   at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+   at System.Data.EntityClient.EntityAdapter.Update(IEntityStateManager entityCache)
+   at System.Data.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at HolyAngels.Web.Helpers.UserModelHelper.Register(RegisterModel model) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 237
+2012-03-29 13:10:29,333 [44] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 116
+2012-03-29 13:10:29,370 [11] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 116
+2012-03-29 13:10:30,837 [44] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 116
+2012-03-29 13:10:33,208 [11] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.Register
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Violation of UNIQUE KEY constraint 'UK_UsersEmail'. Cannot insert duplicate key in object 'dbo.Users'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Mapping.Update.Internal.DynamicUpdateCommand.Execute(UpdateTranslator translator, EntityConnection connection, Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+   --- End of inner exception stack trace ---
+   at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+   at System.Data.EntityClient.EntityAdapter.Update(IEntityStateManager entityCache)
+   at System.Data.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at HolyAngels.Web.Helpers.UserModelHelper.Register(RegisterModel model) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 238
+2012-03-29 13:10:40,045 [11] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 116
+2012-03-29 13:10:40,245 [11] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.Register
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Violation of UNIQUE KEY constraint 'UK_UsersEmail'. Cannot insert duplicate key in object 'dbo.Users'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Mapping.Update.Internal.DynamicUpdateCommand.Execute(UpdateTranslator translator, EntityConnection connection, Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+   --- End of inner exception stack trace ---
+   at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+   at System.Data.EntityClient.EntityAdapter.Update(IEntityStateManager entityCache)
+   at System.Data.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at HolyAngels.Web.Helpers.UserModelHelper.Register(RegisterModel model) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 238
+2012-03-29 13:10:50,001 [44] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 116
+2012-03-29 13:11:20,499 [44] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.Register
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Violation of UNIQUE KEY constraint 'UK_UsersEmail'. Cannot insert duplicate key in object 'dbo.Users'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Mapping.Update.Internal.DynamicUpdateCommand.Execute(UpdateTranslator translator, EntityConnection connection, Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+   --- End of inner exception stack trace ---
+   at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+   at System.Data.EntityClient.EntityAdapter.Update(IEntityStateManager entityCache)
+   at System.Data.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at HolyAngels.Web.Helpers.UserModelHelper.Register(RegisterModel model) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 238
+2012-03-29 13:11:27,303 [46] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 116
+2012-03-29 13:11:28,872 [11] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 116
+2012-03-29 13:11:45,051 [46] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 116
+2012-03-29 13:17:07,005 [46] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.Register
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Violation of UNIQUE KEY constraint 'UK_UsersEmail'. Cannot insert duplicate key in object 'dbo.Users'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Mapping.Update.Internal.DynamicUpdateCommand.Execute(UpdateTranslator translator, EntityConnection connection, Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+   --- End of inner exception stack trace ---
+   at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+   at System.Data.EntityClient.EntityAdapter.Update(IEntityStateManager entityCache)
+   at System.Data.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at HolyAngels.Web.Helpers.UserModelHelper.Register(RegisterModel model) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 238
+2012-03-29 14:47:10,452 [43] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 121
+2012-03-29 14:47:11,641 [43] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 121
+2012-03-29 14:51:13,116 [41] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 121
+2012-03-29 14:51:14,650 [41] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - UserModelHelper.GetFormsAuthenticationTicket
+System.ArgumentException: Invalid value for 'encryptedTicket' parameter.
+   at System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   at HolyAngels.Web.Helpers.UserModelHelper.GetFormsAuthenticationTicket() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\UserModelHelper.cs:line 121
+2012-03-29 15:09:40,462 [17] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - Manage.UserModelHelper.Edit
+System.InvalidOperationException: The property 'Ministries' on type 'User_2AE5EB6AE1880FB5F314FE789A7F0A785B93EE0882A83E40A83C289DAD3DCE37' cannot be set because the collection is already set to an EntityCollection.
+   at System.Data.Entity.DynamicProxies.User_2AE5EB6AE1880FB5F314FE789A7F0A785B93EE0882A83E40A83C289DAD3DCE37.set_Ministries(ICollection`1 )
+   at HolyAngels.Web.Areas.Manage.Helpers.ManageUserModelHelper.Update(BaseUserModel model, Status& status) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Areas\Manage\Helpers\ManageUserModelHelper.cs:line 359
+2012-03-29 15:40:52,460 [18] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - ManageRoleModelHelper.GetRoles
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at HolyAngels.Web.Areas.Manage.Helpers.ManageRoleModelHelper.GetRoles(List`1 items, DbContextHelper db) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Areas\Manage\Helpers\ManageRoleModelHelper.cs:line 99
+2012-03-29 15:40:52,604 [18] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - Manage.UserModelHelper.Edit
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at HolyAngels.Web.Areas.Manage.Helpers.ManageRoleModelHelper.GetRoles(List`1 items, DbContextHelper db) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Areas\Manage\Helpers\ManageRoleModelHelper.cs:line 113
+   at HolyAngels.Web.Areas.Manage.Helpers.ManageUserModelHelper.Update(ManageUserModel model, Status& status) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Areas\Manage\Helpers\ManageUserModelHelper.cs:line 360
+2012-03-29 15:42:10,265 [17] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - ManageRoleModelHelper.GetRoles
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at HolyAngels.Web.Areas.Manage.Helpers.ManageRoleModelHelper.GetRoles(List`1 items, DbContextHelper db) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Areas\Manage\Helpers\ManageRoleModelHelper.cs:line 99
+2012-03-29 15:42:44,958 [17] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - Manage.UserModelHelper.Edit
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at HolyAngels.Web.Areas.Manage.Helpers.ManageRoleModelHelper.GetRoles(List`1 items, DbContextHelper db) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Areas\Manage\Helpers\ManageRoleModelHelper.cs:line 113
+   at HolyAngels.Web.Areas.Manage.Helpers.ManageUserModelHelper.Update(ManageUserModel model, Status& status) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Areas\Manage\Helpers\ManageUserModelHelper.cs:line 360
+2012-03-29 15:48:45,557 [12] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - ManageRoleModelHelper.GetRoles
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at HolyAngels.Web.Areas.Manage.Helpers.ManageRoleModelHelper.GetRoles(List`1 items, DbContextHelper db) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Areas\Manage\Helpers\ManageRoleModelHelper.cs:line 99
+2012-03-29 15:48:45,596 [12] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - Manage.UserModelHelper.Edit
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at HolyAngels.Web.Areas.Manage.Helpers.ManageRoleModelHelper.GetRoles(List`1 items, DbContextHelper db) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Areas\Manage\Helpers\ManageRoleModelHelper.cs:line 113
+   at HolyAngels.Web.Areas.Manage.Helpers.ManageUserModelHelper.Update(ManageUserModel model, Status& status) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Areas\Manage\Helpers\ManageUserModelHelper.cs:line 360
+2012-03-29 15:49:37,119 [11] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - ManageRoleModelHelper.GetRoles
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at HolyAngels.Web.Areas.Manage.Helpers.ManageRoleModelHelper.GetRoles(List`1 items, DbContextHelper db) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Areas\Manage\Helpers\ManageRoleModelHelper.cs:line 99
+2012-03-29 15:49:37,154 [11] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - Manage.UserModelHelper.Edit
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at HolyAngels.Web.Areas.Manage.Helpers.ManageRoleModelHelper.GetRoles(List`1 items, DbContextHelper db) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Areas\Manage\Helpers\ManageRoleModelHelper.cs:line 113
+   at HolyAngels.Web.Areas.Manage.Helpers.ManageUserModelHelper.Update(ManageUserModel model, Status& status) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Areas\Manage\Helpers\ManageUserModelHelper.cs:line 360
+2012-03-29 15:49:45,891 [14] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - ManageRoleModelHelper.GetRoles
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at HolyAngels.Web.Areas.Manage.Helpers.ManageRoleModelHelper.GetRoles(List`1 items, DbContextHelper db) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Areas\Manage\Helpers\ManageRoleModelHelper.cs:line 99
+2012-03-29 15:49:45,930 [14] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - Manage.UserModelHelper.Edit
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at HolyAngels.Web.Areas.Manage.Helpers.ManageRoleModelHelper.GetRoles(List`1 items, DbContextHelper db) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Areas\Manage\Helpers\ManageRoleModelHelper.cs:line 113
+   at HolyAngels.Web.Areas.Manage.Helpers.ManageUserModelHelper.Update(ManageUserModel model, Status& status) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Areas\Manage\Helpers\ManageUserModelHelper.cs:line 360
+2012-03-29 15:50:47,199 [11] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - ManageRoleModelHelper.GetRoles
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at HolyAngels.Web.Areas.Manage.Helpers.ManageRoleModelHelper.GetRoles(List`1 items, DbContextHelper db) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Areas\Manage\Helpers\ManageRoleModelHelper.cs:line 99
+2012-03-29 15:50:47,201 [11] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - Manage.UserModelHelper.Edit
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at HolyAngels.Web.Areas.Manage.Helpers.ManageRoleModelHelper.GetRoles(List`1 items, DbContextHelper db) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Areas\Manage\Helpers\ManageRoleModelHelper.cs:line 113
+   at HolyAngels.Web.Areas.Manage.Helpers.ManageUserModelHelper.Update(ManageUserModel model, Status& status) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Areas\Manage\Helpers\ManageUserModelHelper.cs:line 360
+2012-03-29 15:57:13,068 [11] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - ManageRoleModelHelper.GetRoles
+System.NotSupportedException: LINQ to Entities does not recognize the method 'System.String ToString()' method, and this method cannot be translated into a store expression.
+   at System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.DefaultTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   at System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   at System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   at System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   at System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.ContainsTranslator.TranslateContains(ExpressionConverter parent, Expression sourceExpression, Expression valueExpression)
+   at System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.ContainsTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   at System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   at System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   at System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   at System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   at System.Data.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input)
+   at System.Data.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input, DbExpressionBinding& binding)
+   at System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, DbExpression& source, DbExpressionBinding& sourceBinding, DbExpression& lambda)
+   at System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   at System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   at System.Data.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   at System.Data.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   at System.Data.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   at System.Data.Objects.ELinq.ExpressionConverter.Convert()
+   at System.Data.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Data.Entity.Internal.Linq.InternalQuery`1.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at HolyAngels.Web.Areas.Manage.Helpers.ManageRoleModelHelper.GetRoles(List`1 items, DbContextHelper db) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Areas\Manage\Helpers\ManageRoleModelHelper.cs:line 100
+2012-03-29 15:57:50,375 [11] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - Manage.UserModelHelper.Edit
+System.NotSupportedException: LINQ to Entities does not recognize the method 'System.String ToString()' method, and this method cannot be translated into a store expression.
+   at HolyAngels.Web.Areas.Manage.Helpers.ManageRoleModelHelper.GetRoles(List`1 items, DbContextHelper db) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Areas\Manage\Helpers\ManageRoleModelHelper.cs:line 113
+   at HolyAngels.Web.Areas.Manage.Helpers.ManageUserModelHelper.Update(ManageUserModel model, Status& status) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Areas\Manage\Helpers\ManageUserModelHelper.cs:line 360
+2012-03-29 16:20:18,580 [19] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - Manage.UserModelHelper.Edit
+System.InvalidOperationException: The property 'Roles' on type 'User_2AE5EB6AE1880FB5F314FE789A7F0A785B93EE0882A83E40A83C289DAD3DCE37' cannot be set because the collection is already set to an EntityCollection.
+   at System.Data.Entity.DynamicProxies.User_2AE5EB6AE1880FB5F314FE789A7F0A785B93EE0882A83E40A83C289DAD3DCE37.set_Roles(ICollection`1 )
+   at HolyAngels.Web.Areas.Manage.Helpers.ManageUserModelHelper.Update(ManageUserModel model, Status& status) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Areas\Manage\Helpers\ManageUserModelHelper.cs:line 360
+2012-03-30 01:22:15,093 [10] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - Manage.UserModelHelper.Edit
+System.InvalidOperationException: The property 'Roles' on type 'User_2AE5EB6AE1880FB5F314FE789A7F0A785B93EE0882A83E40A83C289DAD3DCE37' cannot be set because the collection is already set to an EntityCollection.
+   at System.Data.Entity.DynamicProxies.User_2AE5EB6AE1880FB5F314FE789A7F0A785B93EE0882A83E40A83C289DAD3DCE37.set_Roles(ICollection`1 )
+   at HolyAngels.Web.Areas.Manage.Helpers.ManageUserModelHelper.Update(ManageUserModel model, Status& status) in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Areas\Manage\Helpers\ManageUserModelHelper.cs:line 359
+2012-03-30 02:02:14,442 [10] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - ManageEventModelHelper.GetPaginatedEvents
+System.Data.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'StartDate'.
+Invalid column name 'EndDate'.
+Invalid column name 'StartTime'.
+Invalid column name 'EndTime'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Data.Entity.Internal.Linq.InternalQuery`1.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at HolyAngels.Web.Areas.Manage.Helpers.ManageEventModelHelper.GetPaginatedEvents() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Areas\Manage\Helpers\ManageEventModelHelper.cs:line 26
+2012-03-30 22:28:49,074 [8] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - QuoteModelHelper.GetRandom
+System.ArgumentException: Keyword not supported: 'user name'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(String connectionString, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(String value)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.Entity.Internal.LazyInternalConnection.TryInitializeFromAppConfig(String name)
+   at System.Data.Entity.Internal.LazyInternalConnection.Initialize()
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Select[TSource,TResult](IQueryable`1 source, Expression`1 selector)
+   at HolyAngels.Web.Helpers.QuoteModelHelper.GetAll() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\QuoteModelHelper.cs:line 20
+2012-03-30 22:32:22,265 [4] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - QuoteModelHelper.GetRandom
+System.ArgumentException: Keyword not supported: 'user name'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(String connectionString, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(String value)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.Entity.Internal.LazyInternalConnection.TryInitializeFromAppConfig(String name)
+   at System.Data.Entity.Internal.LazyInternalConnection.Initialize()
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Select[TSource,TResult](IQueryable`1 source, Expression`1 selector)
+   at HolyAngels.Web.Helpers.QuoteModelHelper.GetAll() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\QuoteModelHelper.cs:line 20
+2012-03-30 22:35:17,538 [9] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - QuoteModelHelper.GetRandom
+System.ArgumentException: Keyword not supported: 'user name'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(String connectionString, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(String value)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.Entity.Internal.LazyInternalConnection.TryInitializeFromAppConfig(String name)
+   at System.Data.Entity.Internal.LazyInternalConnection.Initialize()
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Select[TSource,TResult](IQueryable`1 source, Expression`1 selector)
+   at HolyAngels.Web.Helpers.QuoteModelHelper.GetAll() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\QuoteModelHelper.cs:line 20
+2012-03-30 23:32:58,483 [19] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - QuoteModelHelper.GetRandom
+System.ArgumentException: Keyword not supported: 'user name'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(String connectionString, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(String value)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.Entity.Internal.LazyInternalConnection.TryInitializeFromAppConfig(String name)
+   at System.Data.Entity.Internal.LazyInternalConnection.Initialize()
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Select[TSource,TResult](IQueryable`1 source, Expression`1 selector)
+   at HolyAngels.Web.Helpers.QuoteModelHelper.GetAll() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\QuoteModelHelper.cs:line 20
+2012-03-30 23:34:29,913 [19] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - QuoteModelHelper.GetRandom
+System.Data.ProviderIncompatibleException: The provider did not return a ProviderManifestToken string. ---> System.ArgumentException: Could not determine storage version; a valid storage connection or a version hint is required.
+   at System.Data.SqlClient.SqlProviderServices.GetDbProviderManifestToken(DbConnection connection)
+   at System.Data.Common.DbProviderServices.GetProviderManifestToken(DbConnection connection)
+   --- End of inner exception stack trace ---
+   at System.Data.Common.DbProviderServices.GetProviderManifestToken(DbConnection connection)
+   at System.Data.Entity.ModelConfiguration.Utilities.DbConnectionExtensions.GetProviderInfo(DbConnection connection, DbProviderManifest& providerManifest)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Select[TSource,TResult](IQueryable`1 source, Expression`1 selector)
+   at HolyAngels.Web.Helpers.QuoteModelHelper.GetAll() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\QuoteModelHelper.cs:line 20
+2012-03-30 23:35:21,530 [20] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - QuoteModelHelper.GetRandom
+System.ArgumentException: Keyword not supported: 'user name'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(String connectionString, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(String value)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.Entity.Internal.LazyInternalConnection.TryInitializeFromAppConfig(String name)
+   at System.Data.Entity.Internal.LazyInternalConnection.Initialize()
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Select[TSource,TResult](IQueryable`1 source, Expression`1 selector)
+   at HolyAngels.Web.Helpers.QuoteModelHelper.GetAll() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\QuoteModelHelper.cs:line 20
+2012-03-30 23:36:18,696 [18] FATAL HolyAngels.Web.Areas.Manage.Helpers.LogHelper [(null)] - QuoteModelHelper.GetRandom
+System.Data.DataException: An exception occurred while initializing the database. See the InnerException for details. ---> System.Data.EntityException: The underlying provider failed on Open. ---> System.Data.SqlClient.SqlException: Cannot open database "HolyAngels" requested by the login. The login failed.
+Login failed for user 'HADBA'.
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   --- End of inner exception stack trace ---
+   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at System.Data.Entity.Internal.InternalContext.QueryForModelHash()
+   at System.Data.Entity.Internal.InternalContext.CompatibleWithModel(Boolean throwIfNoMetadata)
+   at System.Data.Entity.Database.CompatibleWithModel(Boolean throwIfNoMetadata)
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.<>c__DisplayClass5.<PerformDatabaseInitialization>b__3()
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   at System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Select[TSource,TResult](IQueryable`1 source, Expression`1 selector)
+   at HolyAngels.Web.Helpers.QuoteModelHelper.GetAll() in C:\Users\admin\Documents\Visual Studio 2010\Projects\HolyAngels\trunk\HolyAngels.Web\Helpers\QuoteModelHelper.cs:line 20

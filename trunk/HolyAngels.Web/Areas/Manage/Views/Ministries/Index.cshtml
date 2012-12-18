@@ -1,0 +1,32 @@
+﻿@using HolyAngels.Web.Areas.Manage.Models
+@using HolyAngels.Web.Domains
+@using MvcContrib.UI.Grid
+@using MvcContrib.UI.Pager
+
+@model PaginationModel<MinistryModel>
+           
+<script language="javascript" type="text/javascript">
+    $(function () {
+        HA.manageMinistries.initListPage();
+    });
+</script>
+
+<div style="padding: 10px 0px 10px 15px">
+    @Html.ActionLink("Add New Ministry", new T4MVC_ActionResult(@MVC.Manage.Name, @MVC.Manage.Ministries.Name, @MVC.Manage.Ministries.ActionNames.Add))
+    <br />
+    @Html.Pager(Model.Data)
+</div>
+
+@Html.Grid(Model.Data).Columns(
+        columns => {columns.For(d => d.Name).Sortable(true).SortColumnName(Constants.Sort_Column_Name);
+        columns.For(d => d.Description).Sortable(true).SortColumnName(Constants.Sort_Column_Description);
+        columns.For(d =>
+            Html.ActionLink("Edit", new T4MVC_ActionResult(MVC.Manage.Name, MVC.Manage.Ministries.Name, MVC.Manage.Ministries.ActionNames.Edit).AddRouteValue("idKey", d.IdKey))
+            ).Named("").DoNotEncode();
+        }).Sort(Model.SortOptions)
+
+<div style="padding: 10px 0px 10px 15px">
+    @Html.Pager(Model.Data)
+    <br />
+    @Html.ActionLink("Add New Ministry", new T4MVC_ActionResult(@MVC.Manage.Name, @MVC.Manage.Ministries.Name, @MVC.Manage.Ministries.ActionNames.Add))
+</div>

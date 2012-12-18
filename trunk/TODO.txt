@@ -1,0 +1,11 @@
+Password validation 6 to 10 alphanumeric characters include 1 specical character ~!@#$*%^-_
+Create an arcticles page from main navigational menu
+Create featured acticle(s) that are display from home page
+Change manage article add/edit page start and end dates. Needs default.
+Provide audit tracking for Articles, Events and Quotes
+Provide approver for Arcticles, Events and Quotes models/cshtml pages.
+Provide donation button (possibly via Paypal)
+Add meta keywords, descriptions and author(s) to Home, Ministries, About Us, 
+	Events, Church History, Mission and Mural pages (used for SEO)
+Add like faceback button to _layout.cshtml (Requires facebook for church)
+Add follow us twitter button to _layout.cshtml (Requires twitter for church)

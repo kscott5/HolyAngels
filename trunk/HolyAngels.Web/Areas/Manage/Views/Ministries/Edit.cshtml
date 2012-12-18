@@ -1,0 +1,36 @@
+﻿@model HolyAngels.Web.Areas.Manage.Models.MinistryModel
+<script language="javascript" type="text/javascript">
+    $(function () {
+        HA.manageMinistries.initEditPage(rteOptions);
+    });
+</script>
+
+<div style="padding: 10px 0px 0px 15px">
+    <h3>@Model.SubTitle</h3>
+</div>
+
+
+@using (Html.BeginForm(new T4MVC_ActionResult(MVC.Manage.Name, MVC.Manage.Ministries.Name, MVC.Manage.Ministries.ActionNames.Edit), FormMethod.Post, new { @id = "haForm", @name = "haForm" }))
+{
+    <div style="padding: 10px 0px 5px 15px">
+    <p>
+        @Html.ValidationMessage("Error")
+    </p>
+
+    <p>
+    @Html.LabelFor(m => m.Name)
+    @Html.TextBoxFor(m => m.Name)
+    @Html.ValidationMessageFor(m => m.Name)
+    </p>
+
+    <p>
+    @Html.LabelFor(m => m.Description)
+    @Html.TextAreaFor(m => m.Description, new { @rows = 10, @columns = 10, @class = "rtarea" })
+    @Html.ValidationMessageFor(m => m.Description)
+    </p>
+    @Html.HiddenFor(m => m.IdKey)
+    </div>
+    <div style="padding: 10px 0px 5px 15px">
+        <a href="javascript:Stub();" id="save" name="save">Save</a>
+    </div>
+}

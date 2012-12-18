@@ -1,0 +1,13 @@
+﻿@model HolyAngels.Web.Areas.Manage.Models.PaginationModel<HolyAngels.Web.Areas.Manage.Models.MinistryModel>
+
+<h3>@Model.SubTitle</h3>
+@{
+    foreach(var ms in Model.Data)
+    {
+        <div>
+        <img src="@Links.Content.images.Flaming_Cross_gif" alt="Flaming Cross" />
+        <span>@ms.Name</span>
+        <p>@ms.Description</p>
+        </div>
+    }
+}

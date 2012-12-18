@@ -1,0 +1,3 @@
+﻿ALTER TABLE [dbo].[Audits]
+	ADD CONSTRAINT [PK_Audits]
+	 PRIMARY KEY CLUSTERED (Id)

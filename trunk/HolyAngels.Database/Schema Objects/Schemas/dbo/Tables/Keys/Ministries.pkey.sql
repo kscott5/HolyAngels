@@ -1,0 +1,2 @@
+﻿ALTER TABLE dbo.Ministries ADD CONSTRAINT PK_MinistriesId PRIMARY KEY CLUSTERED (Id)
+GO

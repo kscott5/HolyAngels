@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BB4B3791-7237-49FF-94E4-E348E59A09AF}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HolyAngels.Web</RootNamespace>
+    <AssemblyName>HolyAngels.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DesktopBuildPackageLocation>..\HolyAnges.Deployment.Package\Debug.Web.zip</DesktopBuildPackageLocation>
+    <DeployIisAppPath>Holy Angels</DeployIisAppPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DesktopBuildPackageLocation>..\HolyAnges.Deployment.Package\Release.Web.zip</DesktopBuildPackageLocation>
+    <DeployIisAppPath>Holy Angels</DeployIisAppPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlSanitizationLibrary">
+      <HintPath>..\..\tools\AntiXSS Library v4.2\SANITIZER\HtmlSanitizationLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\tools\log4net-1.2.10\bin\net\2.0\release\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc">
+      <HintPath>..\..\tools\MVCContrib\Dependencies\Microsoft.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="MvcContrib">
+      <HintPath>..\..\tools\MVCContrib\MvcContrib.dll</HintPath>
+    </Reference>
+    <Reference Include="MvcContrib.FluentHtml">
+      <HintPath>..\..\tools\MVCContrib\MvcContrib.FluentHtml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.WebPages.Deployment, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Areas\Manage\Controllers\ArticlesController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\Manage\Controllers\EventsController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\Manage\Controllers\MinistriesController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\Manage\Controllers\QuotesController.cs" />
+    <Compile Include="Areas\Manage\Controllers\UsersController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\Manage\Helpers\CommonModelHelper.cs" />
+    <Compile Include="Areas\Manage\Helpers\EnumHelper.cs" />
+    <Compile Include="Areas\Manage\Helpers\ManageArticleModelHelper.cs" />
+    <Compile Include="Areas\Manage\Helpers\DbContextHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\Manage\Helpers\ManageEventModelHelper.cs" />
+    <Compile Include="Areas\Manage\Helpers\LogHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\Manage\Helpers\ManageMinistryModelHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\Manage\Helpers\ManageQuoteModelHelper.cs" />
+    <Compile Include="Areas\Manage\Helpers\ManageRoleModelHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\Manage\Helpers\ManageUserModelHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\Manage\ManageAreaRegistration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Areas\Manage\Models\CategoryModel.cs" />
+    <Compile Include="ArticlesController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Attributes\CompareDateAttribute.cs" />
+    <Compile Include="Attributes\CompareTimeAttribute.cs" />
+    <Compile Include="Binders\GenericModelBinder.cs" />
+    <Compile Include="Controllers\ArticlesController.cs" />
+    <Compile Include="Controllers\EventCalendarController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MinistryController.cs" />
+    <Compile Include="Controllers\FacebookController.cs" />
+    <Compile Include="Domains\Article.cs" />
+    <Compile Include="Domains\BaseDomain.cs" />
+    <Compile Include="Domains\Category.cs" />
+    <Compile Include="Domains\CommonDataHub.cs" />
+    <Compile Include="Domains\Constants.cs" />
+    <Compile Include="Domains\Event.cs" />
+    <Compile Include="Domains\Ministry.cs" />
+    <Compile Include="Domains\Quote.cs" />
+    <Compile Include="Domains\Role.cs" />
+    <Compile Include="Domains\User.cs" />
+    <Compile Include="EventCalendarController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FacebookController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Filters\FormsAuthorizeAttribute.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\Manage\Helpers\CommonHelper.cs" />
+    <Compile Include="Helpers\ArticleModelHelper.cs" />
+    <Compile Include="Helpers\BaseModelHelper.cs" />
+    <Compile Include="Helpers\ControllerHelper.cs" />
+    <Compile Include="Helpers\FacebookHelper.cs" />
+    <Compile Include="Helpers\ModelBinderHelper.cs" />
+    <Compile Include="Helpers\EventCalendarModelHelper.cs" />
+    <Compile Include="Helpers\QuoteModelHelper.cs" />
+    <Compile Include="Areas\Manage\Models\ArticleModel.cs" />
+    <Compile Include="Areas\Manage\Models\BaseModel.cs" />
+    <Compile Include="Areas\Manage\Models\EventModel.cs" />
+    <Compile Include="HomeController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Manage.ArticlesController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Manage.EventsController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Manage.MinistriesController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Manage.QuotesController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Manage.SharedController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Manage.UsersController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MinistryController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HomeModel.cs" />
+    <Compile Include="Areas\Manage\Models\MinistryModel.cs" />
+    <Compile Include="Areas\Manage\Models\PaginationModel.cs" />
+    <Compile Include="Areas\Manage\Models\QuoteModel.cs" />
+    <Compile Include="Areas\Manage\Models\RoleModel.cs" />
+    <Compile Include="Areas\Manage\Models\UserModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SharedController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T4MVC.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Manage\Views\Users\Index.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Areas\Manage\Views\Web.config" />
+    <Content Include="Content\adt_higherground\images\bullet.gif" />
+    <Content Include="Content\adt_higherground\images\clock.gif" />
+    <Content Include="Content\adt_higherground\images\comment.gif" />
+    <Content Include="Content\adt_higherground\images\content-wrap.jpg" />
+    <Content Include="Content\adt_higherground\images\content.jpg" />
+    <Content Include="Content\adt_higherground\images\dots.jpg" />
+    <Content Include="Content\adt_higherground\images\firefox-gray.jpg" />
+    <Content Include="Content\adt_higherground\images\footer-bottom.jpg" />
+    <Content Include="Content\adt_higherground\images\footer-dots.jpg" />
+    <Content Include="Content\adt_higherground\images\header-bg.jpg" />
+    <Content Include="Content\adt_higherground\images\header-group-photo.gif" />
+    <Content Include="Content\adt_higherground\images\header-group-photo.jpg" />
+    <Content Include="Content\adt_higherground\images\header-group-photo.png" />
+    <Content Include="Content\adt_higherground\images\header-group-photo_mc.gif" />
+    <Content Include="Content\adt_higherground\images\header-group-photo_mc.png" />
+    <Content Include="Content\adt_higherground\images\header-photo.jpg" />
+    <Content Include="Content\adt_higherground\images\header-photo.png" />
+    <Content Include="Content\adt_higherground\images\higroundscr1.gif" />
+    <Content Include="Content\adt_higherground\images\higroundscr2.gif" />
+    <Content Include="Content\adt_higherground\images\higroundscr3.gif" />
+    <Content Include="Content\adt_higherground\images\higroundscr4.gif" />
+    <Content Include="Content\adt_higherground\images\nav-current.jpg" />
+    <Content Include="Content\adt_higherground\images\nav-current.png" />
+    <Content Include="Content\adt_higherground\images\nav-hover.jpg" />
+    <Content Include="Content\adt_higherground\images\nav-hover.png" />
+    <Content Include="Content\adt_higherground\images\nav.jpg" />
+    <Content Include="Content\adt_higherground\images\nav.png" />
+    <Content Include="Content\adt_higherground\images\page.gif" />
+    <Content Include="Content\adt_higherground\images\post.jpg" />
+    <Content Include="Content\adt_higherground\images\top-bg.jpg" />
+    <Content Include="Content\adt_higherground\style.css" />
+    <Content Include="Content\fullcalendar.css" />
+    <Content Include="Content\fullcalendar.print.css" />
+    <Content Include="Content\images\African_Sanctus_small.jpg" />
+    <Content Include="Content\images\ani-cross02.gif" />
+    <Content Include="Content\images\ARK-OF-THE-COVENANT.GIF" />
+    <Content Include="Content\images\BLmap1663.gif" />
+    <Content Include="Content\images\code.png" />
+    <Content Include="Content\images\Flaming_Cross.gif" />
+    <Content Include="Content\images\Fr-Mveng.jpg" />
+    <Content Include="Content\images\Holy_Angels_Church_Mural-1.jpg" />
+    <Content Include="Content\images\image.png" />
+    <Content Include="Content\images\John-the-Baptist.jpg" />
+    <Content Include="Content\images\link.png" />
+    <Content Include="Content\images\Messiah_small.jpg" />
+    <Content Include="Content\images\social_facebook_14.png" />
+    <Content Include="Content\images\text_bold.png" />
+    <Content Include="Content\images\text_italic.png" />
+    <Content Include="Content\images\text_list_bullets.png" />
+    <Content Include="Content\images\The_Creation_small.jpg" />
+    <Content Include="Content\rte.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\fullcalendar.js" />
+    <Content Include="Scripts\fullcalendar.min.js" />
+    <Content Include="Scripts\gcal.js" />
+    <Content Include="Scripts\ha.js" />
+    <Content Include="Scripts\jquery-1.5.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.5.1.js" />
+    <Content Include="Scripts\jquery-1.5.1.min.js" />
+    <Content Include="Scripts\jquery-1.6.2.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.11.js" />
+    <Content Include="Scripts\jquery-ui-1.8.11.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.16.custom.min.js" />
+    <Content Include="Scripts\jquery.rte.js" />
+    <Content Include="Scripts\jquery.rte.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\modernizr-1.7.js" />
+    <Content Include="Scripts\modernizr-1.7.min.js" />
+    <Content Include="Templates\PasswordReset.htm" />
+    <Content Include="Test.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Areas\Manage\Views\Shared\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Manage\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Manage\Views\Users\Edit.cshtml" />
+    <Compile Include="Modules\FormsAuthenticationModule.cs" />
+    <Content Include="Areas\Manage\Views\Events\Index.cshtml" />
+    <Content Include="Areas\Manage\Views\Events\Add.cshtml" />
+    <Content Include="Areas\Manage\Views\Events\Edit.cshtml" />
+    <Content Include="Areas\Manage\Views\Quotes\Edit.cshtml" />
+    <Content Include="Areas\Manage\Views\Quotes\Index.cshtml" />
+    <Content Include="Areas\Manage\Views\Quotes\Add.cshtml" />
+    <Content Include="Areas\Manage\Views\Ministries\Add.cshtml" />
+    <Content Include="Areas\Manage\Views\Ministries\Edit.cshtml" />
+    <Content Include="Areas\Manage\Views\Ministries\Index.cshtml" />
+    <Content Include="Areas\Manage\Views\Articles\Add.cshtml" />
+    <Content Include="Areas\Manage\Views\Articles\Edit.cshtml" />
+    <Content Include="Areas\Manage\Views\Articles\Index.cshtml" />
+    <None Include="T4MVC.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>T4MVC.cs</LastGenOutput>
+    </None>
+    <Content Include="Views\Shared\_LogOnPartial.cshtml" />
+    <Content Include="Views\Ministry\Index.cshtml" />
+    <Content Include="Views\Home\Christianity.cshtml" />
+    <Content Include="Views\Home\History.cshtml" />
+    <Content Include="Views\Home\Mission.cshtml" />
+    <Content Include="Views\Home\Mural.cshtml" />
+    <Content Include="Views\EventCalendar\Index.cshtml" />
+    <Content Include="Views\Articles\Viewer.cshtml" />
+    <Content Include="Views\Articles\Index.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Ministry\DisplayMinistry.cshtml" />
+    <Content Include="Views\Home\Privacy.cshtml" />
+    <Content Include="Views\Home\Terms.cshtml" />
+    <Content Include="Views\Facebook\Authorize.cshtml" />
+    <Content Include="Views\Facebook\Deauthorize.cshtml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49167</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8181</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost/HolyAngels.Web</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:8181</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+</Project>
