@@ -5,7 +5,7 @@ using System.Linq;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace HolyAngels.Web.Domains
+namespace HolyAngels.Domains
 {
     [Flags]
     public enum UserStatus : int
@@ -68,9 +68,9 @@ namespace HolyAngels.Web.Domains
         {
             get
             {
-                HolyAngels.Web.Domains.UserStatus userStatus;
-                if (!Enum.TryParse<HolyAngels.Web.Domains.UserStatus>(UserStatus.ToString(), out userStatus))
-                    userStatus = HolyAngels.Web.Domains.UserStatus.Unknown;
+                HolyAngels.Domains.UserStatus userStatus;
+                if (!Enum.TryParse<HolyAngels.Domains.UserStatus>(UserStatus.ToString(), out userStatus))
+                    userStatus = HolyAngels.Domains.UserStatus.Unknown;
                 return userStatus;
             }
             set

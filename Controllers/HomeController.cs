@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+
 using HolyAngels.Models;
 
 namespace HolyAngels.Controllers
@@ -12,7 +13,7 @@ namespace HolyAngels.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            return View(new HomeModel());
         }
 
         public IActionResult About()

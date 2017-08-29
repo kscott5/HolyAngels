@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace HolyAngels.Web.Domains
+namespace HolyAngels.Domains
 {
     public class CommonDataHub : BaseDomain
     {

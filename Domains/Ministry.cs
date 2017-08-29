@@ -5,7 +5,7 @@ using System.Linq;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace HolyAngels.Web.Domains
+namespace HolyAngels.Domains
 {
     [Table("Ministries")]
     public class Ministry : BaseDomain

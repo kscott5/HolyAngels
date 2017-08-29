@@ -1,12 +1,9 @@
 ﻿using System;
+
+using System.ComponentModel.DataAnnotations;
 using System.Collections.Generic;
-using System.Linq;
 
-using System.Web;
-
-using HolyAngels.Web.Areas.Manage.Models;
-
-namespace HolyAngels.Web.Models
+namespace HolyAngels.Models
 {
     public class HomeModel : BaseModel
     {
@@ -21,6 +18,7 @@ namespace HolyAngels.Web.Models
             MetaKeywords = "Holy Angel Church Men Coalition";
             MetaDescription = "Holy Angel Home Page for the Church";
             MetaSubject = "Holy Angel Church";
+            Quote = new QuoteModel();
         }
         
         public override string MetaKeywords { get; set; }
