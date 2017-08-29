@@ -11,23 +11,103 @@ namespace HolyAngels.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
-        {
-            return View(new HomeModel());
+        public virtual ActionResult Index()
+        {   
+            var model = new HomeModel();
+            model.PageTitle = "Holy Angels Church";
+            model.MetaDescription = "";
+            model.MetaKeywords = "";
+            model.MetaSubject = "";
+
+            return View(model);
         }
 
-        public IActionResult About()
+        public virtual ActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            var model = new HomeModel();
+            model.PageTitle = "About Holy Angels Church";
+            model.MetaDescription = "";
+            model.MetaKeywords = "";
+            model.MetaSubject = "";
 
-            return View();
+            return View(model);
         }
 
-        public IActionResult Contact()
+        public virtual ActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            var model = new HomeModel();
+            model.PageTitle = "Holy Angels Contact Information";
+            model.MetaDescription = "";
+            model.MetaKeywords = "";
+            model.MetaSubject = "";
 
-            return View();
+            return View(model);
+        }
+
+        public virtual ActionResult Mural()
+        {
+            var model = new HomeModel();
+            model.PageTitle = "Holy Angels Church Mural";
+            model.MetaDescription = "";
+            model.MetaKeywords = "";
+            model.MetaSubject = "";
+
+            return View(model);
+        }
+
+        public virtual ActionResult History()
+        {
+            var model = new HomeModel();
+            model.PageTitle = "Holy Angels Church History";
+            model.MetaDescription = "";
+            model.MetaKeywords = "";
+            model.MetaSubject = "";
+
+            return View(model);
+        }
+
+        public virtual ActionResult Mission()
+        {
+            var model = new HomeModel();
+            model.PageTitle = "Holy Angels Church Mission";
+            model.MetaDescription = "";
+            model.MetaKeywords = "";
+            model.MetaSubject = "";
+
+            return View(model);
+        }
+
+        public virtual ActionResult Christianity()
+        {
+            var model = new HomeModel();
+            model.PageTitle = "Holy Angels African-American Christianity";
+            model.MetaDescription = "";
+            model.MetaKeywords = "";
+            model.MetaSubject = "";
+
+            return View(model);
+        }
+
+        public virtual ActionResult Privacy()
+        {
+            var model = new HomeModel();
+            model.PageTitle = "Holy Angels Privacy Statement";
+            model.MetaDescription = "";
+            model.MetaKeywords = "";
+            model.MetaSubject = "";
+
+            return View(model);
+        }
+
+        public virtual ActionResult Terms()
+        {
+            var model = new HomeModel();
+            model.PageTitle = "Holy Angels Church Terms of site use";
+            model.MetaDescription = "";
+            model.MetaKeywords = "";
+            model.MetaSubject = "";
+
+            return View(model);
         }
 
         public IActionResult Error()

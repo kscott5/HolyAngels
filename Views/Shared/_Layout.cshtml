@@ -17,33 +17,79 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">HolyAngels</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2017 - HolyAngels</p>
-        </footer>
+
+    <div id="dialog">
     </div>
+
+    <!-- wrap starts here -->
+    <div id="wrap">
+        <div id="top-bg">
+        </div>
+        <!--header -->
+        <div id="header">
+            <h1 id="logo-text">
+                <a href="" title="">@Model.SiteName</a></h1>
+            <h2 id="slogan">
+                @Model.SiteSlogan</h2>
+            <div id="header-links">
+                @Html.Partial("_LogOnPartial")
+            </div>
+            <!--header ends-->
+        </div>
+        <div id="header-photo">
+        </div>
+        <div id="nav">
+            <ul>                
+                <li><a asp-controller="home" asp-action="index">Home</a></li>
+                <li><a asp-controller="ministries" asp-action="index">Ministries</a></li>
+                <li><a asp-controller="eventcalendar" asp-action="events">Events</a></li>
+                <li><a asp-controller="articles" asp-action="index">Articles</a></li>
+                <li><a asp-controller="home" asp-action="about">About Us</a></li>
+                <li><a asp-controller="home" asp-action="contact">Contact</a></li>
+            </ul>
+        </div>
+        <!-- content-wrap starts -->
+        <div id="content-wrap">
+            <div id="sidebar" style="float: left">
+                <div style="padding: 0px 0px 0px 5px">
+                    <h3>General</h3>
+                    </div>
+                    
+                <ul>
+                    <li><a asp-controller="home" asp-action="christianity">African American Christianity</a></li>
+                    <li><a asp-controller="home" asp-action="history">Church History</a></li>
+                    <li><a asp-controller="home" asp-action="about">Service Times</a></li>
+                    <li><a asp-controller="home" asp-action="mural">Church Mural</a></li>
+                </ul>
+                
+                <div id="fb-root"></div>
+<script>    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+    } (document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="fb-like" data-href="http://www.holyangels.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
+            </div>
+            <!-- main start -->
+            <div id="main">
+                @RenderBody()
+            </div>
+            <!-- end main -->
+        </div>
+        <!-- content-wrap ends-->
+        <!-- footer starts -->
+        <div id="footer-wrap">
+            <p>
+                Development by KS Technologies <br />
+            </p>
+            <p>CSS by <a href="http://www.styleshout.com">styleshout (To remove link send donation to ealigam@gmail.com)</a>.</p>            
+        </div>
+        <!-- footer ends here -->
+    </div>
+    <!-- end wrap -->
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
