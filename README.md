@@ -1,8 +1,23 @@
-HolyAngels
+#HolyAngels
 ==========
-Website written using ASP.NET MVC, C#, jquery and various web technologies. The purpose *
-of this project was to provide technical evaluation of various open source Content  
-Management Systems verse custom development.
 
-It also served as an introduction to ASP.NET MVC architecture which relays on 
-convention verse configuration and model similiarly to Ruby on Rails.
+This is a simple migration designed to move the existing ASP.NET MVC app to .NET Core 2.0.
+
+###Here are few objectives for this go base
+
+- [ ] Installing and configuring Visual Studio Code
+- [ ] Install and configure extensions
+- [ ] Update package reference and namespace reference
+- [ ] Update websites classes and namespaces
+- [ ] Install configure .NET Tools namely Watcher
+- [ ] Using Dependency Injection for Configuration, Logging and Services
+- [ ] Replace SQL Server with MongoDB
+- [ ] Basic authentication and authorization
+
+###Here are a few nice to haves:
+
+* Rebranding using react, typescript, semantic etc
+* Extend basic authentication and authorization
+* Javascript Migration
+* NPM package manager use
+* WebPack Middleware use
