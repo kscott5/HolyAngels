@@ -1,12 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
 using Newtonsoft.Json;
 using MongoDB.Driver;
+using MongoDB.Driver.Linq;
 
 using HolyAngels.Models;
 
@@ -29,10 +31,34 @@ namespace HolyAngels.Services {
             this.ClientDB = client.GetDatabase(dbName);
         }
 
-        public HomeModel GetPageMetaData(string pageName = "home") {
-            this.ClientDB.GetCollection<HomeModel>("PageMetaData", null);
+        /// <summary>
+        ///
+        /// </summary>
+        public PageModel GetPageMetaData(string pageName = "home") {
+            var query = this.ClientDB
+                .GetCollection<PageModel>("pages").AsQueryable();
 
-            throw new NotImplementedException();
+            var results = from q in query
+                select q;
+
+            return results.First();
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IReadOnlyList<QuoteModel> GetQuotes() {
+            var query = this.ClientDB
+                .GetCollection<QuoteModel>("quotes").AsQueryable();
+            
+            var results = from q in query
+                select q;
+                
+            return results.ToList();
+        }
+
+        public Boolean AddQuote(QuoteModel document) {            
+            throw new NotImplementException();
         }
     }
 }
