@@ -22,12 +22,6 @@ namespace HolyAngels.Models
             };*/
         }
 
-        public override string MetaKeywords { get; set; }
-        public override string MetaDescription { get; set; }
-        public override string MetaSubject { get; set; }
-        public override string PageTitle { get; set; }
-        public override string SubTitle { get; set; }
-
         //public GridSortOptions SortOptions { get; set; }
 
         //public IPagination<T> Data { get; set; }

@@ -11,17 +11,9 @@ namespace HolyAngels.Models
     {
         public ArticleModel() : base()
         {
-            SubTitle = "Holy Angels Article(s)";
-            PageTitle = "Articles";
             Ministries = new List<MinistryModel>();
             MultiSelectMinistryList = new List<MinistryModel>();
         }
-
-        public override string MetaKeywords { get; set; }
-        public override string MetaDescription { get; set; }
-        public override string MetaSubject { get; set; }
-        public override string PageTitle { get; set; }
-        public override string SubTitle { get; set; }
 
         [Display(Name = "Description")]
         public string Description { get; set; }

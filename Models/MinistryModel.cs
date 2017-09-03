@@ -9,17 +9,9 @@ namespace HolyAngels.Models
     {
         public MinistryModel() : base()
         {
-            PageTitle = "Holy Angels Ministries";
-            SubTitle = "Ministries";
             Users = new List<UserModel>();
             MultiSelectUserList = new List<UserModel>();
         }
-
-        public override string MetaKeywords { get; set; }
-        public override string MetaDescription { get; set; }
-        public override string MetaSubject { get; set; }
-        public override string PageTitle { get; set; }
-        public override string SubTitle { get; set; }
 
         [Display(Name = "Description")]
         [DataType(DataType.Text)]

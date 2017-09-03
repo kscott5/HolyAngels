@@ -13,12 +13,6 @@ namespace HolyAngels.Models
             Source = "";
         }
 
-        public override string MetaKeywords { get; set; }
-        public override string MetaDescription { get; set; }
-        public override string MetaSubject { get; set; }
-        public override string PageTitle { get; set; }
-        public override string SubTitle { get; set; }
-
         [Required(AllowEmptyStrings = false, ErrorMessage = "*")]
         [Display(Name = "Description")]
         public string Description { get; set; }
