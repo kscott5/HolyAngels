@@ -5,13 +5,12 @@ using System.Collections.Generic;
 
 namespace HolyAngels.Models
 {
-    public class MinistryModel : BaseModel
+    public class MinistryModel
     {
-        public MinistryModel() : base()
-        {
-            Users = new List<UserModel>();
-            MultiSelectUserList = new List<UserModel>();
+        public MinistryModel(){
         }
+
+        public int Id {get; set};
 
         [Display(Name = "Description")]
         [DataType(DataType.Text)]
@@ -21,11 +20,5 @@ namespace HolyAngels.Models
         [Display(Name = "Name")]
         [DataType(DataType.Text)]
         public string Name { get; set; }
-
-        [Display(Name = "Users")]
-        public List<UserModel> Users { get; set; }
-
-        [Display(Name = "Users")]
-        public List<UserModel> MultiSelectUserList { get; set; }
     }
 }

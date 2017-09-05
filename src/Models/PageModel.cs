@@ -5,9 +5,9 @@ using System.Collections.Generic;
 
 namespace HolyAngels.Models
 {
-    public class PageModel
+    public class PageModel : BaseDataModel
     {
-        public PageModel() : this("Page"){}
+        public PageModel() : this("Page") {}
 
         public PageModel(string pageTitle)
         {

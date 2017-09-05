@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace HolyAngels.Models
 {    
-    public abstract class BaseUserModel : BaseModel
+    public abstract class BaseUserModel : BaseDataModel
     {
         public BaseUserModel()
         {
@@ -19,6 +19,8 @@ namespace HolyAngels.Models
         public DateTime? Modified { get; set; }
         public DateTime? LastAcecssed { get; set; }
 
+        [Display(Name = "Role")]
+        public List<RoleModel> Roles { get; set; }
         [Display(Name = "Ministry")]
         public List<MinistryModel> Ministries { get; set; }
 

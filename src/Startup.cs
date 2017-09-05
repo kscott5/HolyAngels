@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
+using HolyAngels.Services;
+
 namespace HolyAngels
 {
     public class Startup
@@ -22,6 +24,8 @@ namespace HolyAngels
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            DataService.RegisterClassMaps();
+            services.AddSingleton(typeof(DataService));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

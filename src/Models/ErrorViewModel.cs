@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace HolyAngels.Models
 {
-    public class ErrorViewModel
+    public class ErrorViewModel : BaseDataModel
     {
         public string RequestId { get; set; }
 

@@ -5,8 +5,10 @@ using System.Collections.Generic;
 
 namespace HolyAngels.Models
 {
-    public class RoleModel : BaseModel
-    {
+    public class RoleModel 
+    {        
+        public int Id { get; set; }
+
         [Display(Name="Name")]
         [Required(AllowEmptyStrings = false, ErrorMessage = "*")]
         public string Name { get; set; }

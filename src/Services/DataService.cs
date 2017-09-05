@@ -7,6 +7,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
 using Newtonsoft.Json;
+
+using MongoDB.Bson.Serialization;
+using MongoDB.Bson.Serialization.IdGenerators;
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;
 
@@ -29,6 +32,28 @@ namespace HolyAngels.Services {
 
             var dbName = this.Configuration["DatabaseName"]?? "holyangels";
             this.ClientDB = client.GetDatabase(dbName);
+        }
+
+        public static void RegisterClassMaps() {
+            BsonClassMap.RegisterClassMap<RoleModel>(map => {
+                map.AutoMap();
+                map.MapIdMember(c => c.Id);
+            });
+
+            BsonClassMap.RegisterClassMap<CatagoryModel>(map => {
+                map.AutoMap();
+                map.MapIdMember(c => c.Id);
+            });            
+
+            BsonClassMap.RegisterClassMap<MinistryModel>(map => {
+                map.AutoMap();
+                map.MapIdMember(c => c.Id);
+            });            
+        
+            BsonClassMap.RegisterClassMap<QuoteModel>(map => {
+                map.AutoMap();
+                map.MapIdMember(c => c.Id);
+            });            
         }
 
         /// <summary>
@@ -55,6 +80,10 @@ namespace HolyAngels.Services {
                 select q;
                 
             return results.ToList();
+        }
+
+        public IReadOnlyList<RoleModel> GetRoles() {
+                throw new NotImplementedException();
         }
 
         public Boolean AddQuote(QuoteModel document) {            

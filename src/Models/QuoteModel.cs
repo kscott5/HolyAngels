@@ -5,13 +5,16 @@ using System.Collections.Generic;
 
 namespace HolyAngels.Models
 {
-    public class QuoteModel : BaseModel
+    public class QuoteModel 
     {
         public QuoteModel() : base()
         {
             Description = "";
             Source = "";
         }
+
+        
+        public int Id { get; set; }      
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "*")]
         [Display(Name = "Description")]

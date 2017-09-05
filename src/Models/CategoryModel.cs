@@ -5,19 +5,23 @@ using System.Collections.Generic;
 
 namespace HolyAngels.Models
 {
-    public abstract class CategoryModel : BaseModel
+    public abstract class CategoryModel : BaseDataModel
     {
-        public virtual string Name { get; set; }
-        public virtual string Description { get; set; }
+        public int Id {get; set;}
+        
+        public abstract int Type {get; set;}
+
+        public string Name { get; set; }
+        public string Description { get; set; }
     }
 
     public class MinistryCategoryModel : CategoryModel
     {
         public MinistryCategoryModel()
         {
-            Ministries = new List<MinistryModel>();
+            this.Type = 1;
         }
-
-        List<MinistryModel> Ministries { get; set; }
+    
+        public override int Type {get; private set;}
     }
 }

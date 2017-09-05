@@ -5,7 +5,12 @@ using System.Collections.Generic;
 
 namespace HolyAngels.Models
 {
-    public abstract class BaseModel
+    public abstract class BaseDataModel {
+        public int Id { get; set; }
+        public Guid IdKey { get; set; }        
+    }
+
+    public abstract class BaseModel : BaseDataModel
     {
         public BaseModel()
         {
@@ -15,8 +20,6 @@ namespace HolyAngels.Models
             Roles = new List<RoleModel>();
         }
         
-        public int Id { get; set; }
-        public Guid IdKey { get; set; }
         public Guid UserIdKey { get; set; }
 
         [Display(Name = "Role")]

@@ -7,7 +7,7 @@ using HolyAngels.Attributes;
 
 namespace HolyAngels.Models
 {
-    public class EventModel : BaseModel
+    public class EventModel : BaseDataModel
     {
         public EventModel() : base()
         {
