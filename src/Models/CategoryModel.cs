@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace HolyAngels.Models
 {
-    public abstract class CategoryModel : BaseDataModel
+    public abstract class CategoryModel
     {
         public int Id {get; set;}
         
