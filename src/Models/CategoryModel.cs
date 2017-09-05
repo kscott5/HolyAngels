@@ -9,7 +9,7 @@ namespace HolyAngels.Models
     {
         public int Id {get; set;}
         
-        public abstract int Type {get; set;}
+        public abstract int Type {get; private set;}
 
         public string Name { get; set; }
         public string Description { get; set; }
