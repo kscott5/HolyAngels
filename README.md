@@ -1,4 +1,4 @@
-# HolyAngels [![Build Status](https://travis-ci.org/kscott5/HolyAngels.svg)](https://travis-ci.org/kscott5/HolyAngels)
+# HolyAngels [![Build Status](https://travis-ci.org/kscott5/HolyAngels.svg?branch=master)](https://travis-ci.org/kscott5/HolyAngels)
 ==========
 
 This is a simple migration designed to move the existing ASP.NET MVC app to .NET Core 2.0.
