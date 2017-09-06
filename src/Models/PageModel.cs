@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace HolyAngels.Models
 {
-    public class PageModel : BaseDataModel
+    public class PageModel 
     {
         public PageModel() : this("Page") {}
 
@@ -14,7 +14,7 @@ namespace HolyAngels.Models
             SubTitle = "Holy Angel Home";
             PageTitle = pageTitle;
             SubTitle = pageTitle;
-            PageName = pageTitle;
+            PageName = pageTitle;        
             MetaKeywords = "Holy Angel Church Men Coalition";
             MetaDescription = "Holy Angel Home Page for the Church";
             MetaSubject = "Holy Angel Church";
