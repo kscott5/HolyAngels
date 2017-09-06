@@ -7,14 +7,11 @@ namespace HolyAngels.Models
 {
     public class PageModel 
     {
-        public PageModel() : this("Page") {}
-
-        public PageModel(string pageTitle)
+        public PageModel() 
         {
-            SubTitle = "Holy Angel Home";
-            PageTitle = pageTitle;
-            SubTitle = pageTitle;
-            PageName = pageTitle;        
+            Name = "Generic";        
+            PageTitle = "Holy Angels Generic PageTile";
+            SubTitle = "Holy Angels Generic Subtitle";
             MetaKeywords = "Holy Angel Church Men Coalition";
             MetaDescription = "Holy Angel Home Page for the Church";
             MetaSubject = "Holy Angel Church";
@@ -26,7 +23,7 @@ namespace HolyAngels.Models
         public string MetaSubject { get; set; }
         public string PageTitle { get; set; }
         public string SubTitle { get; set; }        
-        public string PageName {get; set; }
+        public string Name {get; set; }
         public IList<string> AccessSettings {get; set;}
     }
 }

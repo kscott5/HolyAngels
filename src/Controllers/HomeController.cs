@@ -5,108 +5,80 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
+using Microsoft.Extensions.Logging;
+
 using HolyAngels.Models;
+using HolyAngels.Services;
 
 namespace HolyAngels.Controllers
-{
+{    
     public class HomeController : Controller
     {
-        public virtual ActionResult Index()
+        private ILogger Logger {get; set;}        
+        private DataService DataService {get; set;}
+        public HomeController(ILoggerFactory factory, DataService dataService) {
+            this.Logger = factory.CreateLogger("HomeController");
+            this.DataService = dataService;
+        }
+
+        public IActionResult Index()
         {   
-            var model = new PageModel();
-            model.PageTitle = "Holy Angels Church";
-            model.MetaDescription = "";
-            model.MetaKeywords = "";
-            model.MetaSubject = "";
+            var model = this.DataService.GetPage("hoME");
+            return View(model);
+        }
+
+        public IActionResult About()
+        {
+            var model = this.DataService.GetPage("About");
 
             return View(model);
         }
 
-        public virtual ActionResult About()
+        public IActionResult Contact()
         {
-            var model = new PageModel();
-            model.PageTitle = "About Holy Angels Church";
-            model.MetaDescription = "";
-            model.MetaKeywords = "";
-            model.MetaSubject = "";
+            var model = this.DataService.GetPage("contAct");
 
             return View(model);
         }
 
-        public virtual ActionResult Contact()
+        public IActionResult Mural()
         {
-            var model = new PageModel();
-            model.PageTitle = "Holy Angels Contact Information";
-            model.MetaDescription = "";
-            model.MetaKeywords = "";
-            model.MetaSubject = "";
+            var model = this.DataService.GetPage("murAl");
 
             return View(model);
         }
 
-        public virtual ActionResult Mural()
+        public IActionResult History()
         {
-            var model = new PageModel();
-            model.PageTitle = "Holy Angels Church Mural";
-            model.MetaDescription = "";
-            model.MetaKeywords = "";
-            model.MetaSubject = "";
+            var model = this.DataService.GetPage("history");
 
             return View(model);
         }
 
-        public virtual ActionResult History()
+        public IActionResult Mission()
         {
-            var model = new PageModel();
-            model.PageTitle = "Holy Angels Church History";
-            model.MetaDescription = "";
-            model.MetaKeywords = "";
-            model.MetaSubject = "";
+            var model = this.DataService.GetPage("mission");
 
             return View(model);
         }
 
-        public virtual ActionResult Mission()
+        public IActionResult Christianity()
         {
-            var model = new PageModel();
-            model.PageTitle = "Holy Angels Church Mission";
-            model.MetaDescription = "";
-            model.MetaKeywords = "";
-            model.MetaSubject = "";
+            var model = this.DataService.GetPage("christiAnity");
 
             return View(model);
         }
 
-        public virtual ActionResult Christianity()
+        public IActionResult Privacy()
         {
-            var model = new PageModel();
-            model.PageTitle = "Holy Angels African-American Christianity";
-            model.MetaDescription = "";
-            model.MetaKeywords = "";
-            model.MetaSubject = "";
+            var model = this.DataService.GetPage("privAcy");
 
             return View(model);
         }
 
-        public virtual ActionResult Privacy()
+        public IActionResult Terms()
         {
-            var model = new PageModel();
-            model.PageTitle = "Holy Angels Privacy Statement";
-            model.MetaDescription = "";
-            model.MetaKeywords = "";
-            model.MetaSubject = "";
-
-            return View(model);
-        }
-
-        public virtual ActionResult Terms()
-        {
-            var model = new PageModel();
-            model.PageTitle = "Holy Angels Church Terms of site use";
-            model.MetaDescription = "";
-            model.MetaKeywords = "";
-            model.MetaSubject = "";
-
+            var model = this.DataService.GetPage("terms");
             return View(model);
         }
 

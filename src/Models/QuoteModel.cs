@@ -14,7 +14,7 @@ namespace HolyAngels.Models
         }
 
         
-        public int Id { get; set; }      
+        public string Id { get; set; }      
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "*")]
         [Display(Name = "Description")]

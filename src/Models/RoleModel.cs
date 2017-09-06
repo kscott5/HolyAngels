@@ -7,7 +7,7 @@ namespace HolyAngels.Models
 {
     public class RoleModel 
     {        
-        public int Id { get; set; }
+        public string Id { get; set; }
 
         [Display(Name="Name")]
         [Required(AllowEmptyStrings = false, ErrorMessage = "*")]

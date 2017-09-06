@@ -10,7 +10,7 @@ namespace HolyAngels.Models
         public MinistryModel(){
         }
 
-        public int Id {get; set;}
+        public string Id {get; set;}
 
         [Display(Name = "Description")]
         [DataType(DataType.Text)]

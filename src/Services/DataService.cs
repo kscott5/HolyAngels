@@ -23,7 +23,7 @@ namespace HolyAngels.Services {
 
         protected ILogger Logger {get; private set;}
 
-        public DataService(IConfigurationRoot configuration, ILoggerFactory factory, string name = "Base") {
+        public DataService(IConfiguration configuration, ILoggerFactory factory, string name = "Base") {
             this.Logger = factory.CreateLogger(string.Format("{0}-DataService", name));
             this.Configuration = configuration.GetSection("DataService");
 
@@ -34,39 +34,47 @@ namespace HolyAngels.Services {
             this.ClientDB = client.GetDatabase(dbName);
         }
 
+        /// <summary>
+        /// Manually map the models to MongoDB to avoid
+        /// using specific class and member attributes.
+        /// Useful for separation of concerns or layering.
+        /// </summary>        
         public static void RegisterClassMaps() {
             BsonClassMap.RegisterClassMap<RoleModel>(map => {
                 map.AutoMap();
-                map.MapIdMember(c => c.Id);
+                map.MapIdMember(c => c.Id).SetIdGenerator(StringObjectIdGenerator.Instance);
             });
 
-            BsonClassMap.RegisterClassMap<CatagoryModel>(map => {
+            BsonClassMap.RegisterClassMap<CategoryModel>(map => {
                 map.AutoMap();
-                map.MapIdMember(c => c.Id);
+                map.MapIdMember(c => c.Id).SetIdGenerator(StringObjectIdGenerator.Instance);
+                map.SetIsRootClass(true);
             });            
+            BsonClassMap.RegisterClassMap<MinistryCategoryModel>();                        
 
             BsonClassMap.RegisterClassMap<MinistryModel>(map => {
                 map.AutoMap();
-                map.MapIdMember(c => c.Id);
+                map.MapIdMember(c => c.Id).SetIdGenerator(StringObjectIdGenerator.Instance);
             });            
         
             BsonClassMap.RegisterClassMap<QuoteModel>(map => {
                 map.AutoMap();
-                map.MapIdMember(c => c.Id);
+                map.MapIdMember(c => c.Id).SetIdGenerator(StringObjectIdGenerator.Instance);
             });            
         }
 
         /// <summary>
         ///
         /// </summary>
-        public PageModel GetPageMetaData(string pageName = "home") {
+        public PageModel GetPage(string name = "Home") {
             var query = this.ClientDB
-                .GetCollection<PageModel>("pages").AsQueryable();
+                .GetCollection<PageModel>("pagemodel").AsQueryable();
 
-            var results = from q in query
-                select q;
+            var results = (from q in query
+                where q.Name == name
+                select q).FirstOrDefault();
 
-            return results.First();
+            return results;
         }
 
         /// <summary>
@@ -74,20 +82,29 @@ namespace HolyAngels.Services {
         /// </summary>
         public IReadOnlyList<QuoteModel> GetQuotes() {
             var query = this.ClientDB
-                .GetCollection<QuoteModel>("quotes").AsQueryable();
+                .GetCollection<QuoteModel>("quotemodel").AsQueryable();
             
-            var results = from q in query
-                select q;
-                
-            return results.ToList();
+            var results = (from q in query
+                select q).ToList();
+
+            return results;
         }
 
         public IReadOnlyList<RoleModel> GetRoles() {
-                throw new NotImplementedException();
+            var query = this.ClientDB
+                .GetCollection<RoleModel>("rolemodel").AsQueryable();
+            
+            var results = (from q in query
+                select q).ToList();
+
+            return results;
         }
 
-        public Boolean AddQuote(QuoteModel document) {            
-            throw new NotImplementedException();
+        public void AddQuote(QuoteModel document) {            
+            var query = this.ClientDB
+                .GetCollection<QuoteModel>("quotemodel");
+            
+            query.InsertOne(document);
         }
     }
 }
