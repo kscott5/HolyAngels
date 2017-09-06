@@ -40,6 +40,11 @@ namespace HolyAngels.Services {
         /// Useful for separation of concerns or layering.
         /// </summary>        
         public static void RegisterClassMaps() {
+            BsonClassMap.RegisterClassMap<PageModel>(map => {
+                map.AutoMap();
+                map.MapIdMember(c => c.Id).SetIdGenerator(StringObjectIdGenerator.Instance);
+            });
+
             BsonClassMap.RegisterClassMap<RoleModel>(map => {
                 map.AutoMap();
                 map.MapIdMember(c => c.Id).SetIdGenerator(StringObjectIdGenerator.Instance);
@@ -69,12 +74,16 @@ namespace HolyAngels.Services {
         public PageModel GetPage(string name = "Home") {
             var query = this.ClientDB
                 .GetCollection<PageModel>("pagemodel").AsQueryable();
-
+            
             var results = (from q in query
-                where q.Name == name
-                select q).FirstOrDefault();
+                select q).ToList();
 
-            return results;
+            // Cache opportunity
+            var result = results.Find((page) => {
+                return page.Name.Equals(name, StringComparison.OrdinalIgnoreCase);
+            });
+
+            return result;
         }
 
         /// <summary>
