@@ -9,15 +9,10 @@ namespace HolyAngels.Models
     {
         public PageModel() 
         {
-            Name = "Generic";        
-            PageTitle = "Holy Angels Generic PageTile";
-            SubTitle = "Holy Angels Generic Subtitle";
-            MetaKeywords = "Holy Angel Church Men Coalition";
-            MetaDescription = "Holy Angel Home Page for the Church";
-            MetaSubject = "Holy Angel Church";
             AccessSettings = new List<string>();
         }
         
+        public string Id {get; set;}
         public string MetaKeywords { get; set; }
         public string MetaDescription { get; set; }
         public string MetaSubject { get; set; }
