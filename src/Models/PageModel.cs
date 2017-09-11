@@ -9,7 +9,7 @@ namespace HolyAngels.Models
     {
         public PageModel() 
         {
-            AccessSettings = new List<string>();
+            AccessSettings = new List<string>();            
         }
         
         public string Id {get; set;}
@@ -19,6 +19,10 @@ namespace HolyAngels.Models
         public string PageTitle { get; set; }
         public string SubTitle { get; set; }        
         public string Name {get; set; }
+        public string SiteName {get;set;}
+        public string SiteSlogan {get; set;}
+        public bool QuoteEnabled {get; set;}
         public IList<string> AccessSettings {get; set;}
+        public QuoteModel Quote {get; set;}
     }
 }

@@ -23,8 +23,15 @@ namespace HolyAngels.Services {
 
         protected ILogger Logger {get; private set;}
 
+        private string SiteName {get; set;}
+        private string SiteSlogan {get; set;}
+
         public DataService(IConfiguration configuration, ILoggerFactory factory, string name = "Base") {
             this.Logger = factory.CreateLogger(string.Format("{0}-DataService", name));
+
+            this.SiteName = configuration["SiteName"];
+            this.SiteSlogan = configuration["SiteSlogan"];
+
             this.Configuration = configuration.GetSection("DataService");
 
             var url = this.Configuration["Url"]?? "mongodb://localhost:6001/holyangels";            
@@ -42,6 +49,7 @@ namespace HolyAngels.Services {
         public static void RegisterClassMaps() {
             BsonClassMap.RegisterClassMap<PageModel>(map => {
                 map.AutoMap();
+                map.SetIgnoreExtraElements(true);
                 map.MapIdMember(c => c.Id).SetIdGenerator(StringObjectIdGenerator.Instance);
             });
 
@@ -83,6 +91,12 @@ namespace HolyAngels.Services {
                 return page.Name.Equals(name, StringComparison.OrdinalIgnoreCase);
             });
 
+            result.SiteName = this.SiteName;
+            result.SiteSlogan = this.SiteSlogan;
+
+            if(result.QuoteEnabled) {
+                result.Quote = this.GetQuotes()?[0];
+            }
             return result;
         }
 
