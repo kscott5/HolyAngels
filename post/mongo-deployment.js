@@ -14,6 +14,9 @@ db.pagemodel.save({"_id": "59af6ef3f21f2e6b34c0af05", "Name": "Mural", "PageTitl
 db.pagemodel.save({"_id": "59af6ef3f21f2e6b34c0af06", "Name": "Privacy", "PageTitle": "Holy Angels - Privacy Policy", "SubTitle": "", "MetaKeywords": "", "MetaDescription": "", "MetaSubject": "","QuoteEnabled": false, "AccessSettings": ["None"]});
 db.pagemodel.save({"_id": "59af6ef3f21f2e6b34c0af07", "Name": "Terms", "PageTitle": "Holy Angels - Terms of Use", "SubTitle": "", "MetaKeywords": "", "MetaDescription": "", "MetaSubject": "","QuoteEnabled": false, "AccessSettings": ["None"]});
 db.pagemodel.save({"_id": "59af6ef3f21f2e6b34c0af08", "Name": "Christianity", "PageTitle": "Holy Angels - Christianity", "SubTitle": "", "MetaKeywords": "", "MetaDescription": "", "MetaSubject": "","QuoteEnabled": false, "AccessSettings": ["None"]});
+db.pagemodel.save({"_id": "59af6ef3f21f2e6b34c0af09", "Name": "Ministries", "PageTitle": "Holy Angels - Ministries", "SubTitle": "", "MetaKeywords": "", "MetaDescription": "", "MetaSubject": "","QuoteEnabled": false, "AccessSettings": ["None"]});
+db.pagemodel.save({"_id": "59af6ef3f21f2e6b34c0af0a", "Name": "Articles", "PageTitle": "Holy Angels - Arcticles", "SubTitle": "", "MetaKeywords": "", "MetaDescription": "", "MetaSubject": "","QuoteEnabled": false, "AccessSettings": ["None"]});
+db.pagemodel.save({"_id": "59af6ef3f21f2e6b34c0af0b", "Name": "Events", "PageTitle": "Holy Angels - Calendar of Events", "SubTitle": "", "MetaKeywords": "", "MetaDescription": "", "MetaSubject": "","QuoteEnabled": false, "AccessSettings": ["None"]});
 
 db.pagemodel.createIndex({"Name": "text"});
 
