@@ -46,7 +46,23 @@ namespace HolyAngels
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Home}/{action=Index}/{id?}"
+                );
+                routes.MapRoute(
+                    "default_ministry",
+                    template: "Ministries/{*ministry}",
+                    defaults: new {controller="Home", action="Ministries"}
+                );
+                routes.MapRoute(
+                    "default_events",
+                    template: "EventCalendar/{*events}",
+                    defaults: new {controller="Home", action="Events"}
+                );
+                routes.MapRoute(
+                    "default_articles",
+                    template: "Articles/{*article}",
+                    defaults: new {controller="Home", action="Articles"}
+                );
             });
         }
     }
