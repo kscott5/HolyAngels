@@ -1,3 +1,14 @@
-@model PageModel
 
-<h1>TODO: Group Ministries</h1>
+@model PageModel<IReadOnlyList<MinistryModel>>
+
+<h3>@Model.SubTitle</h3>
+@{
+    foreach(var data in @Model.Data)
+    {
+        <div>
+        <img src="~/css/images/Flaming_Cross.gif" alt="Flaming Cross" />
+        <span>@data.Name</span>
+        <p>@data.Description</p>
+        </div>
+    }
+}

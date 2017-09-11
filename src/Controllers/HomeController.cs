@@ -85,7 +85,7 @@ namespace HolyAngels.Controllers
         [Route("Ministries/Index")]        
         [Route("Ministries/")]        
         public IActionResult Ministries() {
-            var model = this.DataService.GetPage("ministries");
+            var model = this.DataService.GetPageMinistries();
             return View(model);
         }
 

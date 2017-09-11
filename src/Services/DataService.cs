@@ -100,6 +100,18 @@ namespace HolyAngels.Services {
             return result;
         }
 
+        public PageModel<IReadOnlyList<MinistryModel>> GetPageMinistries() {
+            var model = this.GetPage("ministries");
+
+            var query = this.ClientDB
+                .GetCollection<MinistryModel>("ministrymodel").AsQueryable();
+            
+            var data = (from q in query
+                select q).ToList();
+
+            return PageModel.GetPageModel<IReadOnlyList<MinistryModel>>(model, data);
+        }
+
         /// <summary>
         ///
         /// </summary>

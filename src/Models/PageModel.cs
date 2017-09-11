@@ -11,7 +11,10 @@ namespace HolyAngels.Models
         {
             AccessSettings = new List<string>();            
         }
-        
+
+        public static PageModel<T> GetPageModel<T>(PageModel model, T data) {
+            return new PageModel<T>(model, data);
+        }
         public string Id {get; set;}
         public string MetaKeywords { get; set; }
         public string MetaDescription { get; set; }
@@ -24,5 +27,25 @@ namespace HolyAngels.Models
         public bool QuoteEnabled {get; set;}
         public IList<string> AccessSettings {get; set;}
         public QuoteModel Quote {get; set;}
+    }
+
+    public class PageModel<T> : PageModel {
+        public PageModel(PageModel model, T data) : base() {
+            this.Data = data;
+            this.Id = model.Id;
+            this.MetaKeywords = model.MetaKeywords;
+            this.MetaDescription = model.MetaDescription;
+            this.MetaSubject = model.MetaSubject;
+            this.PageTitle = model.PageTitle;
+            this.SubTitle = model.SubTitle;
+            this.Name = model.Name;
+            this.SiteName = model.SiteName;
+            this.SiteSlogan = model.SiteSlogan;
+            this.QuoteEnabled = model.QuoteEnabled;
+            this.AccessSettings = model.AccessSettings;
+            this.Quote = model.Quote;
+        }
+
+        public T Data {get;}
     }
 }
