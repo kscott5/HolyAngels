@@ -5,15 +5,15 @@ var db = conn.getDB("holyangels");
 //NOTE: Use db.collection.save(...) ensures inserts on new or updates on existing
 
 // Page Models for Views/Home
-db.pagemodel.save({"_id": "59af6ef3f21f2e6b34c0af00", "Name": "Home", "PageTitle": "Holy Angels - Home", "SubTitle": "", "MetaKeywords": "", "MetaDescription": "", "MetaSubject": "", "AccessSettings": ["None"]});
-db.pagemodel.save({"_id": "59af6ef3f21f2e6b34c0af01", "Name": "About", "PageTitle": "Holy Angels - About Us", "SubTitle": "", "MetaKeywords": "", "MetaDescription": "", "MetaSubject": "", "AccessSettings": ["None"]});
-db.pagemodel.save({"_id": "59af6ef3f21f2e6b34c0af02", "Name": "Contact", "PageTitle": "Holy Angels - Contact", "SubTitle": "", "MetaKeywords": "", "MetaDescription": "", "MetaSubject": "", "AccessSettings": ["None"]});
-db.pagemodel.save({"_id": "59af6ef3f21f2e6b34c0af03", "Name": "History", "PageTitle": "Holy Angels - History", "SubTitle": "", "MetaKeywords": "", "MetaDescription": "", "MetaSubject": "", "AccessSettings": ["None"]});
-db.pagemodel.save({"_id": "59af6ef3f21f2e6b34c0af04", "Name": "Mission", "PageTitle": "Holy Angels - Mission", "SubTitle": "", "MetaKeywords": "", "MetaDescription": "", "MetaSubject": "", "AccessSettings": ["None"]});
-db.pagemodel.save({"_id": "59af6ef3f21f2e6b34c0af05", "Name": "Mural", "PageTitle": "Holy Angels - Mural", "SubTitle": "", "MetaKeywords": "", "MetaDescription": "", "MetaSubject": "", "AccessSettings": ["None"]});
-db.pagemodel.save({"_id": "59af6ef3f21f2e6b34c0af06", "Name": "Privacy", "PageTitle": "Holy Angels - Privacy Policy", "SubTitle": "", "MetaKeywords": "", "MetaDescription": "", "MetaSubject": "", "AccessSettings": ["None"]});
-db.pagemodel.save({"_id": "59af6ef3f21f2e6b34c0af07", "Name": "Terms", "PageTitle": "Holy Angels - Terms of Use", "SubTitle": "", "MetaKeywords": "", "MetaDescription": "", "MetaSubject": "", "AccessSettings": ["None"]});
-db.pagemodel.save({"_id": "59af6ef3f21f2e6b34c0af08", "Name": "Christianity", "PageTitle": "Holy Angels - Christianity", "SubTitle": "", "MetaKeywords": "", "MetaDescription": "", "MetaSubject": "", "AccessSettings": ["None"]});
+db.pagemodel.save({"_id": "59af6ef3f21f2e6b34c0af00", "Name": "Home", "PageTitle": "Holy Angels - Home", "SubTitle": "", "MetaKeywords": "", "MetaDescription": "", "MetaSubject": "","QuoteEnabled": true, "AccessSettings": ["None"]});
+db.pagemodel.save({"_id": "59af6ef3f21f2e6b34c0af01", "Name": "About", "PageTitle": "Holy Angels - About Us", "SubTitle": "", "MetaKeywords": "", "MetaDescription": "", "MetaSubject": "","QuoteEnabled": false, "AccessSettings": ["None"]});
+db.pagemodel.save({"_id": "59af6ef3f21f2e6b34c0af02", "Name": "Contact", "PageTitle": "Holy Angels - Contact", "SubTitle": "", "MetaKeywords": "", "MetaDescription": "", "MetaSubject": "","QuoteEnabled": false, "AccessSettings": ["None"]});
+db.pagemodel.save({"_id": "59af6ef3f21f2e6b34c0af03", "Name": "History", "PageTitle": "Holy Angels - History", "SubTitle": "", "MetaKeywords": "", "MetaDescription": "", "MetaSubject": "","QuoteEnabled": false, "AccessSettings": ["None"]});
+db.pagemodel.save({"_id": "59af6ef3f21f2e6b34c0af04", "Name": "Mission", "PageTitle": "Holy Angels - Mission", "SubTitle": "", "MetaKeywords": "", "MetaDescription": "", "MetaSubject": "","QuoteEnabled": false, "AccessSettings": ["None"]});
+db.pagemodel.save({"_id": "59af6ef3f21f2e6b34c0af05", "Name": "Mural", "PageTitle": "Holy Angels - Mural", "SubTitle": "", "MetaKeywords": "", "MetaDescription": "", "MetaSubject": "","QuoteEnabled": false, "AccessSettings": ["None"]});
+db.pagemodel.save({"_id": "59af6ef3f21f2e6b34c0af06", "Name": "Privacy", "PageTitle": "Holy Angels - Privacy Policy", "SubTitle": "", "MetaKeywords": "", "MetaDescription": "", "MetaSubject": "","QuoteEnabled": false, "AccessSettings": ["None"]});
+db.pagemodel.save({"_id": "59af6ef3f21f2e6b34c0af07", "Name": "Terms", "PageTitle": "Holy Angels - Terms of Use", "SubTitle": "", "MetaKeywords": "", "MetaDescription": "", "MetaSubject": "","QuoteEnabled": false, "AccessSettings": ["None"]});
+db.pagemodel.save({"_id": "59af6ef3f21f2e6b34c0af08", "Name": "Christianity", "PageTitle": "Holy Angels - Christianity", "SubTitle": "", "MetaKeywords": "", "MetaDescription": "", "MetaSubject": "","QuoteEnabled": false, "AccessSettings": ["None"]});
 
 db.pagemodel.createIndex({"Name": "text"});
 
@@ -36,13 +36,13 @@ db.catorymodel.save({"_id": "59af6ef3f21f2e6b34c0af7c", _t: "MinistryCategoryMod
 db.catorymodel.save({"_id": "59af6ef3f21f2e6b34c0af7d", _t: "MinistryCategoryModel", "Name": "Health & Wellness", "Description": "", "Created": new Date()});
 
 // Application Quotes
-db.quotemodel.save({"_id": "59af6ef3f21f2e6b34c0af80", "Description": "I am the Alpha and the Omega, says the Lord God, who is, who was, and who is to come, the Almighty.", "source": "Revelation 1:8"});
-db.quotemodel.save({"_id": "59af6ef3f21f2e6b34c0af81", "Description": "You are worthy, our Lord and God, to receive glory and honour and power, for you made the whole universe; by your will, when it did not exist, it was Created.", "source": "Revelation 4:11"});
-db.quotemodel.save({"_id": "59af6ef3f21f2e6b34c0af82", "Description": "Father, may your name be held holy, your kingdom come; give us each day our daily bread, and forgive us or sins, for we ourselves forgive each one who is in debt to us. And do not put us to the test.", "source": "Luke 11:1"});
-db.quotemodel.save({"_id": "59af6ef3f21f2e6b34c0af83", "Description": "Rejoice, you who enjoy God''s favor!..Look! You are to conceive in your womb and bear a son, and you must name him Jesus. He will be great and will be called Son of the Most High", "source": "Luke 1:39"});
-db.quotemodel.save({"_id": "59af6ef3f21f2e6b34c0af84", "Description": "May God Bless You and Keep You. May God''s Perpetual Light Shine Upon You. In the Name of the Father, Son, And Holy Spirit.", "source": "Holy Angels Church"});
-db.quotemodel.save({"_id": "59af6ef3f21f2e6b34c0af85", "Description": "Why this uproar among the nations, this impotent muttering of the peoples? Kings on earth take up position, princes plot together against the Lord and his Anointed.", "source": "Acts 4:37"});
-db.quotemodel.save({"_id": "59af6ef3f21f2e6b34c0af86", "Description": "..the Lord took some bread, and after he had given thanks, he broke it, and he said", "Name": "'This is my body, which is for you, do this in remembrance of me.'' And in the same way, with the cup after supper, saying, This cup is the new covenant in my blood. Whenever you drink it, do this as a memorial of me. Whenever you eat this bread, then and drink this cup, you are proclaiming the Lord''s death until he comes. Therefore anyone who eats the bread or drinks the cup of the Lord unworthily is answerable for the body and blood of the Lord.", "source": "Corinthians 11:27"});
+db.quotemodel.save({"_id": "59af6ef3f21f2e6b34c0af80", "Description": "I am the Alpha and the Omega, says the Lord God, who is, who was, and who is to come, the Almighty.", "Source": "Revelation 1:8"});
+db.quotemodel.save({"_id": "59af6ef3f21f2e6b34c0af81", "Description": "You are worthy, our Lord and God, to receive glory and honour and power, for you made the whole universe; by your will, when it did not exist, it was Created.", "Source": "Revelation 4:11"});
+db.quotemodel.save({"_id": "59af6ef3f21f2e6b34c0af82", "Description": "Father, may your name be held holy, your kingdom come; give us each day our daily bread, and forgive us or sins, for we ourselves forgive each one who is in debt to us. And do not put us to the test.", "Source": "Luke 11:1"});
+db.quotemodel.save({"_id": "59af6ef3f21f2e6b34c0af83", "Description": "Rejoice, you who enjoy God''s favor!..Look! You are to conceive in your womb and bear a son, and you must name him Jesus. He will be great and will be called Son of the Most High", "Source": "Luke 1:39"});
+db.quotemodel.save({"_id": "59af6ef3f21f2e6b34c0af84", "Description": "May God Bless You and Keep You. May God''s Perpetual Light Shine Upon You. In the Name of the Father, Son, And Holy Spirit.", "Source": "Holy Angels Church"});
+db.quotemodel.save({"_id": "59af6ef3f21f2e6b34c0af85", "Description": "Why this uproar among the nations, this impotent muttering of the peoples? Kings on earth take up position, princes plot together against the Lord and his Anointed.", "Source": "Acts 4:37"});
+db.quotemodel.save({"_id": "59af6ef3f21f2e6b34c0af86", "Description": "..the Lord took some bread, and after he had given thanks, he broke it, and he said 'This is my body, which is for you, do this in remembrance of me.' And in the same way, with the cup after supper, saying, This cup is the new covenant in my blood. Whenever you drink it, do this as a memorial of me. Whenever you eat this bread, then and drink this cup, you are proclaiming the Lord's death until he comes. Therefore anyone who eats the bread or drinks the cup of the Lord unworthily is answerable for the body and blood of the Lord.", "Source": "Corinthians 11:27"});
 
 // Application Ministries
 db.ministrymodel.save({"_id": "59af6ef3f21f2e6b34c0af87", "Name": "Baptism", "Description": ""});
