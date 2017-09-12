@@ -3,5 +3,5 @@ obj/
 data/
 logs/
 *.pid
-wwwroot/lib/
+**/wwwroot/lib/
 wwwroot/js/*.min.js
