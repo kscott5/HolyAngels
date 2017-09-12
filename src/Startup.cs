@@ -56,7 +56,7 @@ namespace HolyAngels
                 );
                 routes.MapRoute(
                     "default_events",
-                    template: "EventCalendar/{*events}",
+                    template: "EventCalendar/{*events}/",
                     defaults: new {controller="Home", action="Events"}
                 );
                 routes.MapRoute(
