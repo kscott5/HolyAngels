@@ -131,7 +131,6 @@ HA.eventCalendar = HA.prototype = {
             },
             editable: false,
             events: function (start, end, callback) {
-                alert("start: " + start + " - end: " + end);
                 var sd = new Date(start);
                 var ed = new Date(end);
                 var data = 'start=' + sd.getMonth() + '/' + sd.getDate() + '/' + sd.getFullYear();
