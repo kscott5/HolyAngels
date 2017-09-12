@@ -5,15 +5,16 @@ This is a simple migration designed to move the existing ASP.NET MVC app to .NET
 
 ### Here are few objectives for this go base
 
-- [*] Installing and configuring Visual Studio Code (download)[https://code.visualstudio.com/download?wt.mc_id=adw-brandcore-editor-slink-downloads&gclid=EAIaIQobChMIu_vszLuO1gIVRJNpCh3JwQBfEAAYASABEgL-iPD_BwE]
-- [*] Install and configure vs code extensions (help)[https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp]
+- [*] Installing and configuring Visual Studio Code [download](https://code.visualstudio.com/download?wt.mc_id=adw-brandcore-editor-slink-downloads&gclid=EAIaIQobChMIu_vszLuO1gIVRJNpCh3JwQBfEAAYASABEgL-iPD_BwE)
+- [*] Install and configure vs code extensions [help](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
 - [*] Update package reference and namespace reference
 - [*] Update website classes and namespaces
 - [*] Install configure .NET Tools namely Watcher
 - [*] Using Dependency Injection for Configuration, Logging and Services
-- [ ] Replace SQL Server with MongoDB (download)[https://www.mongodb.com/]
+- [*] Replace SQL Server with MongoDB Community [download](https://www.mongodb.com/])
 - [ ] Basic authentication and authorization
-- [ ] Continous Integration configuration
+- [ ] Basic calendar events data access
+- [*] Continous Integration configuration
 
 ### Here are a few nice to haves:
 * Docker deployment
