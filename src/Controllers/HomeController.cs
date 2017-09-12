@@ -89,17 +89,18 @@ namespace HolyAngels.Controllers
             return View(model);
         }
 
-        [Route("Articles/Index")]
-        [Route("Articles/")]        
-        public IActionResult Articles() {
-            var model = this.DataService.GetPage("Articles");
+        [Route("EventCalendar/Events")]
+        [Route("EventCalendar/")]        
+        public IActionResult Events() {
+            var model = this.DataService.GetPage("Events");
             return View(model);
         }
 
         [Route("EventCalendar/Events")]
-        [Route("EventCalendar/")]        
-        public IActionResult Events() {
-            var model = this.DataService.GetPage("Articles");
+        [Route("EventCalendar/")]
+        [HttpPost]
+        public IActionResult Events(DateTime start, DateTime end) {
+            var model = this.DataService.GetPage("Events");
             return View(model);
         }
 
