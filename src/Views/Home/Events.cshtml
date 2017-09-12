@@ -1,3 +1,9 @@
 @model PageModel
 
-<h1>TODO: Calendar of Events</h1>
+<script language="javascript" type="text/javascript">
+    $(document).ready(function(){
+        HA.eventCalendar.init();
+    });
+</script>
+
+<div id="calendar"></div>

@@ -9,8 +9,8 @@ $(document).ready(function () {
 
     HA.author = "Karega Scott";
     HA.Version = "1.0.0";
-    HA.UnsecuredHostBaseUrl = "https://" + document.location.host;
-    HA.SecuredHostBaseUrl = "http://" + document.location.host;
+    HA.UnsecuredHostBaseUrl = "http://" + document.location.host;
+    HA.SecuredHostBaseUrl = "https://" + document.location.host;
     HA.ActualHostBaseUrl = document.location.protocol + "//" + document.location.host;
 });
 
@@ -131,6 +131,7 @@ HA.eventCalendar = HA.prototype = {
             },
             editable: false,
             events: function (start, end, callback) {
+                alert("start: " + start + " - end: " + end);
                 var sd = new Date(start);
                 var ed = new Date(end);
                 var data = 'start=' + sd.getMonth() + '/' + sd.getDate() + '/' + sd.getFullYear();
