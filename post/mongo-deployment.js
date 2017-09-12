@@ -69,3 +69,4 @@ db.ministrymodel.save({"_id": "59af6ef3f21f2e6b34c0af98", "Name": "HIV/AIDS Mini
 db.ministrymodel.save({"_id": "59af6ef3f21f2e6b34c0af99", "Name": "Healthy Side Chats", "Description": ""});
 db.ministrymodel.save({"_id": "59af6ef3f21f2e6b34c0af9a", "Name": "Technology Ministry", "Description": ""});
 
+db.eventmodel.save({"_id" : "59b7ff1d4e66df250654a0ba", "Title": "Independance Day", "Description": "Day United States of America declare soverign rule of itself", "Location": "13 colonies on east coast", "Speakers": ["George Washington", "John Adams", "Benjermen Franklin", "Thomas Jefferson"], "TimeStamps": {"StartDate": new Date("04-07-2017"), "StartTime": null, "EndDate": null, "EndTime": null}});
