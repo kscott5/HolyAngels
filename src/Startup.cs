@@ -26,6 +26,7 @@ namespace HolyAngels
             services.AddMvc();
             DataService.RegisterClassMaps();
             services.AddSingleton(typeof(DataService));
+            services.AddSingleton(typeof(CalendarService));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
