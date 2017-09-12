@@ -53,6 +53,11 @@ namespace HolyAngels.Services {
                 map.MapIdMember(c => c.Id).SetIdGenerator(StringObjectIdGenerator.Instance);
             });
 
+            BsonClassMap.RegisterClassMap<EventModel>(map => {
+                map.AutoMap();
+                map.MapIdMember(c => c.Id).SetIdGenerator(StringObjectIdGenerator.Instance);
+            });
+
             BsonClassMap.RegisterClassMap<RoleModel>(map => {
                 map.AutoMap();
                 map.MapIdMember(c => c.Id).SetIdGenerator(StringObjectIdGenerator.Instance);
