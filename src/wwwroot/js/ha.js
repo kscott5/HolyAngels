@@ -138,7 +138,7 @@ HA.eventCalendar = HA.prototype = {
                 data += '&end=' + ed.getMonth() + '/' + ed.getDate() + '/' + ed.getFullYear();
 
                 $.ajax({
-                    url: 'EventCalendar/Events',
+                    url: HA.ActualHostBaseUrl + '/eventcalendar/events',
                     type: 'POST',
                     data: data,
                     success: function (results) {
