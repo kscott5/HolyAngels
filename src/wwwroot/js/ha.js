@@ -131,6 +131,14 @@ HA.eventCalendar = HA.prototype = {
             },
             editable: false,
             events: function (start, end, callback) {
+                var tokenSet = 'undefined';
+                $.each(document.cookie.split(';'), function(index,item){
+                    var pair = item.split('=');
+                    if(pair[0] == 'X-XSRF-TOKEN') {
+                        tokenSet = pair;
+                        return;
+                    }
+                });
                 var sd = new Date(start);
                 var ed = new Date(end);
                 var data = 'start=' + sd.getMonth() + '/' + sd.getDate() + '/' + sd.getFullYear();
@@ -140,6 +148,7 @@ HA.eventCalendar = HA.prototype = {
                     url: HA.ActualHostBaseUrl + '/eventcalendar/events',
                     type: 'POST',
                     data: data,
+                    headers: {"X-XSRF-TOKEN": tokenSet[1]},
                     success: function (results) {
                         var events = [];
                         results.forEach(function (result) {
