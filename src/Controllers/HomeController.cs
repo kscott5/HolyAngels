@@ -102,8 +102,8 @@ namespace HolyAngels.Controllers
         [Route("EventCalendar/")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public JsonResult Events([FromServices] CalendarService service, DateTime start, DateTime end) {
-            var data = service.GetMonthlyEvents(null);
+        public JsonResult Events([FromServices] CalendarService service, DateTime date) {
+            var data = service.GetMonthlyEvents(date);
             return new JsonResult(data);
         }
 

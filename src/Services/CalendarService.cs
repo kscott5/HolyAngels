@@ -27,21 +27,17 @@ namespace HolyAngels.Services
         /// </summary>    
         public IReadOnlyList<EventModel> GetMonthlyEvents(DateTime? date) {
             // Cache and Asychronous call?
-            var query = this.ClientDB
-                .GetCollection<EventModel>("eventmodel").AsQueryable();
+
+            var dateFilter = new DateTime(
+                date?.Year?? DateTime.Now.Year,
+                date?.Month?? DateTime.Now.Month,
+                1
+            );
             
-            var month = date?.Month?? DateTime.Now.Month;
-            var year = date?.Year?? DateTime.Now.Year;
+            var collection = this.ClientDB.GetCollection<EventModel>("eventmodel")
+                .Find(p => p.TimeStamps["StartDate"] >= dateFilter);
 
-            // At a minimum, order by day of month 
-            var results = (from q in query
-                where q.Timestamps["StartDate"].HasValue  &&
-                      q.Timestamps["StartDate"].Value.Month == month &&
-                      q.Timestamps["StartDate"].Value.Year == year
-                orderby q.Timestamps["StartDate"].Value.Day ascending
-                select q).ToList();
-
-            return results;
+            return collection.ToList();            
         }
 
     }

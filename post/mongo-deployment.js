@@ -70,3 +70,4 @@ db.ministrymodel.save({"_id": "59af6ef3f21f2e6b34c0af99", "Name": "Healthy Side 
 db.ministrymodel.save({"_id": "59af6ef3f21f2e6b34c0af9a", "Name": "Technology Ministry", "Description": ""});
 
 db.eventmodel.save({"_id" : "59b7ff1d4e66df250654a0ba", "Title": "Independance Day", "Description": "Day United States of America declare soverign rule of itself", "Location": "13 colonies on east coast", "Speakers": ["George Washington", "John Adams", "Benjermen Franklin", "Thomas Jefferson"], "TimeStamps": {"StartDate": new Date("04-07-2017"), "StartTime": null, "EndDate": null, "EndTime": null}});
+db.eventmodel.save({"_id" : "59b7ff1d4e66df250654a0bb", "Title": "Return to office", "Description": "Karega return to work after an extended vacation aboard", "Location": "Flexible/Remote", "Speakers": ["All States","PCSC", "Agile", "Scrum"], "TimeStamps": {"StartDate": new Date("10-01-2017"), "StartTime": null, "EndDate": null, "EndTime": null}});

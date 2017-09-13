@@ -139,22 +139,18 @@ HA.eventCalendar = HA.prototype = {
                         return;
                     }
                 });
-                var sd = new Date(start);
-                var ed = new Date(end);
-                var data = 'start=' + sd.getMonth() + '/' + sd.getDate() + '/' + sd.getFullYear();
-                data += '&end=' + ed.getMonth() + '/' + ed.getDate() + '/' + ed.getFullYear();
-
+                
                 $.ajax({
                     url: HA.ActualHostBaseUrl + '/eventcalendar/events',
                     type: 'POST',
-                    data: data,
+                    data: {date: start},
                     headers: {"X-XSRF-TOKEN": tokenSet[1]},
                     success: function (results) {
                         var events = [];
                         results.forEach(function (result) {
                             // Shouldn't haven't to call replace twice...
-                            var resultStart = eval('new ' + result.Start.replace('/', '').replace('/', ''));
-                            var resultEnd = eval('new ' + result.End.replace('/', '').replace('/', ''));
+                            var resultStart = result.TimeStamp.StartDate;
+                            var resultEnd = result.TimeStamp.EndDate;
 
                             var url = "javascript:HA.eventCalendar.showDialog({" +
                                 "Title: '" + result.Title + "'," +
