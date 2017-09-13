@@ -90,7 +90,7 @@ namespace HolyAngels.Controllers
         }
 
         [Route("EventCalendar/Events")]
-        [Route("EventCalendar/")]        
+        [Route("EventCalendar/")]
         public IActionResult Events() {
             var model = this.DataService.GetPage("Events");
             return View(model);
@@ -99,6 +99,7 @@ namespace HolyAngels.Controllers
         [Route("EventCalendar/Events")]
         [Route("EventCalendar/")]
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Events(DateTime start, DateTime end) {
             var model = this.DataService.GetPage("Events");
             return View(model);
