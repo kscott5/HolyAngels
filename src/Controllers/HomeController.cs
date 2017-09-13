@@ -15,84 +15,86 @@ namespace HolyAngels.Controllers
     public class HomeController : Controller
     {
         private ILogger Logger {get; set;}        
-        private DataService DataService {get; set;}
-        public HomeController(ILoggerFactory factory, DataService dataService) {
+        private PageService PageService {get; set;}
+        public HomeController(ILoggerFactory factory, PageService pageService) {
             this.Logger = factory.CreateLogger("HomeController");
-            this.DataService = dataService;
+            this.PageService = pageService;
         }
 
-        public IActionResult Index()
+        public IActionResult Index([FromServices] QuoteService quoteService)
         {   
-            var model = this.DataService.GetPage("hoME");
+            var model = this.PageService.GetPage("hoME");
+            model.Quote = quoteService.GetQuoteOfDay();
+            
             return View(model);
         }
 
         public IActionResult About()
         {
-            var model = this.DataService.GetPage("About");
+            var model = this.PageService.GetPage("About");
 
             return View(model);
         }
 
         public IActionResult Contact()
         {
-            var model = this.DataService.GetPage("contAct");
+            var model = this.PageService.GetPage("contAct");
 
             return View(model);
         }
 
         public IActionResult Mural()
         {
-            var model = this.DataService.GetPage("murAl");
+            var model = this.PageService.GetPage("murAl");
 
             return View(model);
         }
 
         public IActionResult History()
         {
-            var model = this.DataService.GetPage("history");
+            var model = this.PageService.GetPage("history");
 
             return View(model);
         }
 
         public IActionResult Mission()
         {
-            var model = this.DataService.GetPage("mission");
+            var model = this.PageService.GetPage("mission");
 
             return View(model);
         }
 
         public IActionResult Christianity()
         {
-            var model = this.DataService.GetPage("christiAnity");
+            var model = this.PageService.GetPage("christiAnity");
 
             return View(model);
         }
 
         public IActionResult Privacy()
         {
-            var model = this.DataService.GetPage("privAcy");
+            var model = this.PageService.GetPage("privAcy");
 
             return View(model);
         }
 
         public IActionResult Terms()
         {
-            var model = this.DataService.GetPage("terms");
+            var model = this.PageService.GetPage("terms");
             return View(model);
         }
 
         [Route("Ministries/Index")]        
         [Route("Ministries/")]        
         public IActionResult Ministries() {
-            var model = this.DataService.GetPageMinistries();
+            var model = this.PageService.GetPageMinistries();
             return View(model);
         }
 
         [Route("EventCalendar/Events")]
         [Route("EventCalendar/")]
         public IActionResult Events() {
-            var model = this.DataService.GetPage("Events");
+            var model = this.PageService.GetPage("Events");
             return View(model);
         }
 
