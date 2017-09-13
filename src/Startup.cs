@@ -46,6 +46,8 @@ namespace HolyAngels
                 app.UseExceptionHandler("/Home/Error");
             }
 
+            // Includes Antiforgery Token to header.
+            // Used for any client-side ajax request.
             app.Use((context, next) => {
                 if(!context.Response.HasStarted) {                    
                     var forgeryService = context.RequestServices.GetService<IAntiforgery>();
@@ -55,6 +57,7 @@ namespace HolyAngels
 
                 return next.Invoke();
             });
+            
             app.UseStaticFiles();
 
             app.UseMvc(routes =>
