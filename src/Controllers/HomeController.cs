@@ -100,9 +100,9 @@ namespace HolyAngels.Controllers
         [Route("EventCalendar/")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Events(DateTime start, DateTime end) {
-            var model = this.DataService.GetPage("Events");
-            return View(model);
+        public JsonResult Events([FromServices] CalendarService service, DateTime start, DateTime end) {
+            var data = service.GetMonthlyEvents(null);
+            return new JsonResult(data);
         }
 
         public IActionResult Error()
