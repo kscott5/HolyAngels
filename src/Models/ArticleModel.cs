@@ -7,13 +7,13 @@ using HolyAngels.Attributes;
 
 namespace HolyAngels.Models
 {
-    public class ArticleModel : BaseModel
+    public class ArticleModel
     {
         public ArticleModel() : base()
         {
             Ministries = new List<MinistryModel>();
-            MultiSelectMinistryList = new List<MinistryModel>();
         }
+        public string Id { get; set; } 
 
         [Display(Name = "Description")]
         public string Description { get; set; }
@@ -59,8 +59,5 @@ namespace HolyAngels.Models
 
         [Display(Name = "Ministries")]
         public List<MinistryModel> Ministries { get; set; }
-
-        [Display(Name = "Ministries")]
-        public List<MinistryModel> MultiSelectMinistryList { get; set; }
     }
 }
