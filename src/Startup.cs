@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 using HolyAngels.Services;
+using HolyAngels.AdminPanel.Services;
 
 namespace HolyAngels
 {
@@ -29,8 +30,9 @@ namespace HolyAngels
             });
             services.AddMvc();
 
+            AdminDataService.RegisterClassMaps();
+            
             DataService.RegisterClassMaps();
-
             services.AddSingleton(typeof(QuoteService));
             services.AddSingleton(typeof(CalendarService));
             services.AddSingleton(typeof(PageService));
