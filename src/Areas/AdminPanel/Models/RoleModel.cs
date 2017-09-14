@@ -3,7 +3,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Collections.Generic;
 
-namespace HolyAngels.Models
+namespace HolyAngels.AdminPanel.Models
 {
     public class RoleModel 
     {        

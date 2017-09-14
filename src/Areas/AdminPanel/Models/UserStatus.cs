@@ -1,6 +1,6 @@
 using System;
 
-namespace HolyAngels.Models 
+namespace HolyAngels.AdminPanel.Models 
 {
     [Flags]
     public enum UserStatus : int
