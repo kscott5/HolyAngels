@@ -20,13 +20,6 @@ db.pagemodel.save({"_id": "59af6ef3f21f2e6b34c0af0b", "Name": "Events", "PageTit
 
 db.pagemodel.createIndex({"Name": "text"});
 
-// Application Roles
-db.rolemodel.save({"_id": "59af6ef3f21f2e6b34c0af70", "Name": "Basic" });
-db.rolemodel.save({"_id": "59af6ef3f21f2e6b34c0af71", "Name": "Admin" });
-db.rolemodel.save({"_id": "59af6ef3f21f2e6b34c0af72", "Name": "Publisher" });
-db.rolemodel.save({"_id": "59af6ef3f21f2e6b34c0af73", "Name": "Approver" });
-db.rolemodel.save({"_id": "59af6ef3f21f2e6b34c0af74", "Name": "Published" });
-
 // Application Categories  with discriminator
 db.catorymodel.save({"_id": "59af6ef3f21f2e6b34c0af75", _t: "MinistryCategoryModel", "Name": "Catechesis", "Description": "Oral instruction of the Catholic Church doctrine or faith.", "Created": new Date()});
 db.catorymodel.save({"_id": "59af6ef3f21f2e6b34c0af76", _t: "MinistryCategoryModel", "Name": "Technology", "Description": "", "Created": new Date()});
