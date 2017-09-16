@@ -5,7 +5,7 @@ var db = conn.getDB("holyangels");
 //NOTE: Use db.collection.save(...) ensures inserts on new or updates on existing
 
 // Page Models for Views/Home
-db.pagemodel.save({"_id": "59af6ef3f21f2e6b34c0af00", "Name": "Login", "PageTitle": "Holy Angels - Admin Panel Login", "SubTitle": "", "MetaKeywords": "", "MetaDescription": "", "MetaSubject": "", "AccessSettings": ["Admin", "Publisher", "Approver"]});
+db.pagemodel.save({"_id": "59af6ef3f21f2e6b34c0af00", "Name": "Admin-Dashboard", "PageTitle": "Holy Angels - Admin Dashboard", "SubTitle": "", "MetaKeywords": "", "MetaDescription": "", "MetaSubject": "", "AccessSettings": ["Admin", "Publisher", "Approver"]});
 
 // Application Roles
 db.rolemodel.save({"_id": "59af6ef3f21f2e6b34c0af71", "Name": "Admin" });

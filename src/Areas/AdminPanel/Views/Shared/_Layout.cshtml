@@ -1,0 +1,79 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="KEYWORDS" content="@Model.MetaKeywords" />
+    <meta name="SUBJECT" content="@Model.MetaSubject" />
+    <meta name="DESCRIPTION" content="@Model.MetaDescription"/>
+    
+    <title>>@Model.PageTitle</title>
+
+    <environment include="Development">
+        <link href="~/lib/fullcalendar/dist/fullcalendar.css" rel="Stylesheet" type="text/css" />
+        <link href="~/lib/fullcalendar/dist/fullcalendar.print.css" rel="Stylesheet" type="text/css" />
+        <link href="~/css/themes/base/jquery.ui.all.css" rel="Stylesheet" type="text/css" />
+        <link href="~/css/adt_higherground/style.css" rel="stylesheet" type="text/css" />
+        <link href="~/css/rte.css" rel="Stylesheet" type="text/css" />
+    </environment>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/moment/moment.js"></script>
+        <script src="~/lib/fullcalendar/dist/fullcalendar.js"></script>
+        <script src="~/js/ha.js"></script>
+    </environment>
+
+</head>
+<body>
+    <!-- wrap starts here -->
+    <div id="wrap">
+        <div id="top-bg">
+        </div>
+        <!--header -->
+        <div id="header">
+            <h1 id="logo-text">
+                <a href="" title="">@Model.SiteName</a></h1>
+            <h2 id="slogan">
+                @Model.SiteSlogan</h2>
+            <div id="header-links">
+                @Html.Partial("_LogOnPartial")
+            </div>
+            <!--header ends-->
+        </div>
+      
+        <div id="header-photo">
+        </div>
+      
+        <div id="nav">
+            <h1>Navigation Here!</h1>
+        </div>
+
+        <!-- content-wrap starts -->
+        <div id="content-wrap">
+            <div id="sidebar" style="float: left">
+            </div>
+
+            <!-- main start -->
+            <div id="main">
+                @RenderBody()
+            </div>
+            <!-- end main -->
+        </div>
+        <!-- content-wrap ends-->
+
+        <!-- footer starts -->
+        <div id="footer-wrap">
+            <p>
+                Development by KS Technologies <br />
+            </p>
+            <p>CSS by <a href="http://www.styleshout.com">styleshout (To remove link send donation to ealigam@gmail.com)</a>.</p>            
+        </div>
+        <!-- footer ends here -->
+    </div>
+    <!-- end wrap -->
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
