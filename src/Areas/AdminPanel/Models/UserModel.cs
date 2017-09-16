@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 using System.Collections.Specialized;
 
-namespace HolyAngels.AdminPanel.Models
+namespace HolyAngels.Models
 {    
     public class UserModel
     {

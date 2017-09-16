@@ -12,9 +12,9 @@ using MongoDB.Bson.Serialization.IdGenerators;
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;
 
-using HolyAngels.AdminPanel.Models;
+using HolyAngels.Models;
 
-namespace HolyAngels.AdminPanel.Services {
+namespace HolyAngels.Services {
     public abstract class AdminDataService {
         protected IMongoDatabase ClientDB {get; private set;}
         

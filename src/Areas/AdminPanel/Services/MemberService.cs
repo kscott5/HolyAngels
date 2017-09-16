@@ -11,7 +11,7 @@ using MongoDB.Driver.Linq;
 using HolyAngels.Models;
 using HolyAngels.Services;
 
-namespace HolyAngels.AdminPanel.Services
+namespace HolyAngels.Services
 {
     public class MemberService : AdminDataService
     {
