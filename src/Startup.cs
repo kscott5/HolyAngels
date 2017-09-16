@@ -9,7 +9,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 using HolyAngels.Services;
-using HolyAngels.AdminPanel.Services;
 
 namespace HolyAngels
 {
