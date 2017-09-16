@@ -70,14 +70,19 @@ namespace HolyAngels
                     template: "{controller=Home}/{action=Index}/{id?}"
                 );
                 routes.MapRoute(
-                    "default_ministry",
+                    "ministry",
                     template: "Ministries/{*ministry}",
                     defaults: new {controller="Home", action="Ministries"}
                 );
                 routes.MapRoute(
-                    "default_events",
+                    "events",
                     template: "EventCalendar/{*events}/",
                     defaults: new {controller="Home", action="Events"}
+                );
+                routes.MapAreaRoute(
+                    name: "admin",
+                    areaName: "AdminPanel",
+                    template: "Admin/{controller=Dashboard}/{action=App}/{id?}"
                 );
             });
         }

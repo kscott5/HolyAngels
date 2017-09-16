@@ -11,22 +11,20 @@
     <title>>@Model.PageTitle</title>
 
     <environment include="Development">
-        <link href="~/lib/fullcalendar/dist/fullcalendar.css" rel="Stylesheet" type="text/css" />
-        <link href="~/lib/fullcalendar/dist/fullcalendar.print.css" rel="Stylesheet" type="text/css" />
         <link href="~/css/themes/base/jquery.ui.all.css" rel="Stylesheet" type="text/css" />
         <link href="~/css/adt_higherground/style.css" rel="stylesheet" type="text/css" />
-        <link href="~/css/rte.css" rel="Stylesheet" type="text/css" />
     </environment>
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/moment/moment.js"></script>
-        <script src="~/lib/fullcalendar/dist/fullcalendar.js"></script>
-        <script src="~/js/ha.js"></script>
     </environment>
 
 </head>
 <body>
+
+    <div id="dialog">
+    </div>
+
     <!-- wrap starts here -->
     <div id="wrap">
         <div id="top-bg">
@@ -42,19 +40,31 @@
             </div>
             <!--header ends-->
         </div>
-      
         <div id="header-photo">
         </div>
-      
         <div id="nav">
-            <h1>Navigation Here!</h1>
+            <ul>                
+                <li><a asp-controller="home" asp-action="index">Home</a></li>
+                <li><a asp-controller="ministries" asp-action="index">Ministries</a></li>
+                <li><a asp-controller="eventcalendar" asp-action="events">Events</a></li>
+                <li><a asp-controller="home" asp-action="about">About Us</a></li>
+                <li><a asp-controller="home" asp-action="contact">Contact</a></li>
+            </ul>
         </div>
-
         <!-- content-wrap starts -->
         <div id="content-wrap">
             <div id="sidebar" style="float: left">
+                <div style="padding: 0px 0px 0px 5px">
+                    <h3>General</h3>
+                </div>
+                    
+                <ul>
+                    <li><a asp-controller="home" asp-action="christianity">African American Christianity</a></li>
+                    <li><a asp-controller="home" asp-action="history">Church History</a></li>
+                    <li><a asp-controller="home" asp-action="about">Service Times</a></li>
+                    <li><a asp-controller="home" asp-action="mural">Church Mural</a></li>
+                </ul>
             </div>
-
             <!-- main start -->
             <div id="main">
                 @RenderBody()
@@ -62,7 +72,6 @@
             <!-- end main -->
         </div>
         <!-- content-wrap ends-->
-
         <!-- footer starts -->
         <div id="footer-wrap">
             <p>

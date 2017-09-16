@@ -11,6 +11,7 @@ using HolyAngels.Services;
 
 namespace HolyAngels.Controllers
 {
+    [Area("AdminPanel")]
     public class DashboardController : Controller
     {
         private ILogger Logger {get; set;}
