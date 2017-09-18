@@ -2,6 +2,8 @@ bin/
 obj/
 data/
 logs/
+node_modules/
+package-lock.json
 *.pid
 **/wwwroot/lib/
 wwwroot/js/*.min.js
