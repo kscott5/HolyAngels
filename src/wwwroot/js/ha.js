@@ -14,40 +14,6 @@ $(document).ready(function () {
     HA.ActualHostBaseUrl = document.location.protocol + "//" + document.location.host;
 });
 
-function _clearForm() {
-    $(HA.HtmlForm).find("input").attr("value", "");
-    $(HA.HtmlForm).find("input[type='checkbox']").removeAttr("checked");
-    
-    $(HA.HtmlForm).find("textarea").attr("value", "");
-    $(HA.HtmlForm).find("select option[selected]").removeAttr("selected")
-}
-
-function _submitForm() {
-    $(HA.HtmlForm).submit();
-}
-
-function _initRichTextEditor(options) {
-    if (options != null && 
-        options.content_css_url.indexOf(HA.UnsecuredHostBaseUrl) == -1 &&
-        options.content_css_url.indexOf(HA.SecuredHostBaseUrl) == -1) {
-        options.content_css_url = HA.ActualHostBaseUrl + options.content_css_url;
-    }
-
-    if (options != null &&
-        options.media_url.indexOf(HA.UnsecuredHostBaseUrl) == -1 &&
-        options.media_url.indexOf(HA.SecuredHostBaseUrl) == -1) {
-        options.media_url = HA.ActualHostBaseUrl + options.media_url + "/";
-    }
-
-    //$(HA.HtmlForm).find("textarea[class='rtarea']").rte(options);
-    $(HA.HtmlForm).find("textarea").rte(options);
-}
-
-function _initDatePickers(options) {
-    $("#StartDate").datepicker(options);
-    $("#EndDate").datepicker(options);
-}
-
 function _showDialog (title, data) {
     $("#dialog").html(data);
 
@@ -57,69 +23,6 @@ function _showDialog (title, data) {
     });
 }
 
-// Javascript function used to home page
-HA.home = HA.prototype = {
-    init: function () {
-        HA.common.initNavigation();
-
-        // TODO: initialize the home page
-    }
-};
-
-
-// Common javascript functions
-HA.common = HA.prototype = {
-    initNavigation: function () {
-
-        // TODO: initialize the primary site navigation
-
-    },
-
-    richTextEditor: function (options) {
-        _initRichTextEditor(options);
-    },
-
-    datePickers: function (options) {
-        _initDatePickers(options);
-    },
-
-    bindClicks: function () {
-        var objClear = $("#clear");
-        if (objClear) {
-            objClear.bind("click", function () {
-                _clearForm();
-            });
-        }
-
-        var objSave = $("#save");
-        if (objSave) {
-            objSave.bind("click", function () {
-                _submitForm();
-            });
-        }
-
-        var objRegister = $("#register");
-        if (objRegister) {
-            objRegister.bind("click", function () {
-                _submitForm();
-            });
-        }
-
-        var objSignIn = $("#signin");
-        if (objSignIn) {
-            objSignIn.bind("click", function () {
-                _submitForm();
-            });
-        }
-
-        var objRetreivePwd = $("#retreivePwd");
-        if (objRetreivePwd) {
-            objRetreivePwd.bind("click", function () {
-                _submitForm();
-            });
-        }
-    }
-};
 
 HA.eventCalendar = HA.prototype = {
     init: function () {
@@ -149,8 +52,8 @@ HA.eventCalendar = HA.prototype = {
                         var events = [];
                         results.forEach(function (result) {
                             // Shouldn't haven't to call replace twice...
-                            var resultStart = result.TimeStamp.StartDate;
-                            var resultEnd = result.TimeStamp.EndDate;
+                            var resultStart = result.TimeStamps.StartDate;
+                            //var resultEnd = result.TimeStamps.EndDate;
 
                             var url = "javascript:HA.eventCalendar.showDialog({" +
                                 "Title: '" + result.Title + "'," +
@@ -158,14 +61,14 @@ HA.eventCalendar = HA.prototype = {
                                 "Description: '" + result.Description + "'," +
                                 "Speakers: '" + result.Speakers + "'," +
                                 "Start: '" + resultStart + "'," +
-                                "End: '" + resultEnd + "'," +
+                               // "End: '" + resultEnd + "'," +
                                 "})";
 
 
                             events.push({
                                 title: result.Title,
                                 start: resultStart,
-                                end: resultEnd,
+                               // end: resultEnd,
                                 url: url,
                                 allDay: false
                             });
@@ -199,91 +102,4 @@ HA.eventCalendar = HA.prototype = {
 
         _showDialog(options.Title, html);
     },
-};
-
-// javascript functions for managing users
-HA.manageUsers = HA.prototype = {
-    initListPage: function () {
-        //TODO: Any page initialization
-    },
-
-    initAddPage: function () {
-        HA.common.bindClicks();
-    },
-
-    initEditPage: function () {
-        HA.common.bindClicks();
-    }
-};
-
-// javascript functions for managing events
-HA.manageEvents = HA.prototype = {
-    initListPage: function () {
-        //TODO: Any page initialization
-    },
-
-    initAddPage: function (dpOptions, rteOptions) {
-        HA.common.bindClicks();
-        HA.common.datePickers(dpOptions);
-        HA.common.richTextEditor(rteOptions);
-    },
-
-    initEditPage: function (dpOptions, rteOptions) {
-        HA.common.bindClicks();
-        HA.common.datePickers(dpOptions);
-        HA.common.richTextEditor(rteOptions);
-    }
-};
-
-// javascript functions for managing quotes
-HA.manageQuotes = HA.prototype = {
-    initListPage: function () {
-        //TODO: Any page initialization
-    },
-
-    initAddPage: function (rteOptions) {
-        HA.common.bindClicks();
-        HA.common.richTextEditor(rteOptions);
-    },
-
-    initEditPage: function (rteOptions) {
-        HA.common.bindClicks();
-        HA.common.richTextEditor(rteOptions);
-    }
-};
-
-// javascript functions for managing ministries
-HA.manageMinistries = HA.prototype = {
-    initListPage: function () {
-        //TODO: Any page initialization
-    },
-
-    initAddPage: function (rteOptions) {
-        HA.common.bindClicks();
-        HA.common.richTextEditor(rteOptions);
-    },
-
-    initEditPage: function (rteOptions) {
-        HA.common.bindClicks();
-        HA.common.richTextEditor(rteOptions);
-    }
-};
-
-// javascript functions for managing articles
-HA.manageArticles = HA.prototype = {
-    initListPage: function () {
-        //TODO: Any page initialization
-    },
-
-    initAddPage: function (dpOptions, rteOptions) {        
-        HA.common.bindClicks();
-        HA.common.datePickers(dpOptions);
-        HA.common.richTextEditor(rteOptions);
-    },
-
-    initEditPage: function (dpOptions, rteOptions) {
-        HA.common.bindClicks();
-        HA.common.datePickers(dpOptions);
-        HA.common.richTextEditor(rteOptions);
-    }
 };
