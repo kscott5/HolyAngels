@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
+using Webpack;
+
 using HolyAngels.Services;
 
 namespace HolyAngels
@@ -27,7 +29,9 @@ namespace HolyAngels
             services.AddAntiforgery(options => {
                 options.HeaderName = "X-XSRF-TOKEN";
             });
+
             services.AddMvc();
+            services.AddWebpack();
 
             AdminDataService.RegisterClassMaps();
             
@@ -48,6 +52,8 @@ namespace HolyAngels
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+            
+            //app.UseWebpack($"webpack/config.{env.EnvironmentName}.js", "{env.EnvironmentName}.js");
 
             // Includes Antiforgery Token to header.
             // Used for any client-side ajax request.
