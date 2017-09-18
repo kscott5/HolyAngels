@@ -1,0 +1,19 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        //"outDir": "built",
+        "rootDir": "./",
+        "noImplicitAny": false,
+        "strict": false,
+        "allowJs": false,
+        "allowSyntheticDefaultImports": true
+    },
+    "typeAcquisition": {
+        "enable": true
+    },
+    "exclude": [
+        "node_modules", "wwwroot/lib"
+    ]
+}

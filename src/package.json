@@ -1,0 +1,29 @@
+{
+  "name": "holyangels",
+  "version": "1.0.0",
+  "description": "HolyAngels MVC App",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kscott5/HolyAngles.git"
+  },
+  "keywords": [
+    "ASP.NET",
+    "MVC",
+    ".NET",
+    "Core",
+    "Vue"
+  ],
+  "author": "Karega K. Scott",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kscott5/HolyAngles/issues"
+  },
+  "homepage": "https://github.com/kscott5/HolyAngles#readme",
+  "devDependencies": {
+    "vue": "^2.4.4"
+  }
+}
