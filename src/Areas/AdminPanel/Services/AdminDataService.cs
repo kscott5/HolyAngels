@@ -23,7 +23,7 @@ namespace HolyAngels.Services {
         protected ILogger Logger {get; private set;}
 
         public AdminDataService(IConfiguration configuration, ILoggerFactory factory, string name = "Base") {
-            this.Logger = factory.CreateLogger(string.Format("{0}-DataService", name));
+            this.Logger = factory.CreateLogger($"{name}-DataService");
 
             this.Configuration = configuration.GetSection("DataService");
 
