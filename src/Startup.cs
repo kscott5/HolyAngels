@@ -31,7 +31,6 @@ namespace HolyAngels
             });
 
             services.AddMvc();
-            services.AddWebpack();
 
             AdminDataService.RegisterClassMaps();
             
@@ -53,8 +52,6 @@ namespace HolyAngels
                 app.UseExceptionHandler("/Home/Error");
             }
             
-            //app.UseWebpack($"webpack/config.{env.EnvironmentName}.js", "{env.EnvironmentName}.js");
-
             // Includes Antiforgery Token to header.
             // Used for any client-side ajax request.
             app.Use((context, next) => {
