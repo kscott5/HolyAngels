@@ -19,6 +19,7 @@ namespace HolyAngels
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseKestrel()
                 .UseStartup<Startup>()
                 .Build();
     }
