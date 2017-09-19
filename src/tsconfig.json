@@ -1,18 +1,28 @@
 {
     "compileOnSave": true,
     "compilerOptions": {
-        "target": "es6",
-        "module": "commonjs",
-        //"outDir": "built",
+        "target": "es2016",
+        "module": "es6",
+        "moduleResolution": "node",
+        //"outDir": "./wwwroot/js",
         "rootDir": "./",
+        "types": [
+            "vue-typescript-import-dts"
+        ],
         "noImplicitAny": false,
-        "strict": false,
+        "strict": true,
         "allowJs": false,
-        "allowSyntheticDefaultImports": true
+        "allowSyntheticDefaultImports": true,
+        "lib": [
+            "dom","es5", "es2015.promise"
+        ]
     },
     "typeAcquisition": {
         "enable": true
     },
+    "include": [
+        "wwwroot/js"
+    ],
     "exclude": [
         "node_modules", "wwwroot/lib"
     ]

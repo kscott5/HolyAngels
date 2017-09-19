@@ -24,6 +24,16 @@
   },
   "homepage": "https://github.com/kscott5/HolyAngles#readme",
   "devDependencies": {
-    "vue": "^2.4.4"
+    "css-loader": "^0.28.7",
+    "file-loader": "^0.11.2",
+    "sass-loader": "^6.0.6",
+    "ts-loader": "^2.3.7",
+    "vue": "^2.4.4",
+    "vue-loader": "^13.0.5",
+    "vue-style-loader": "^3.0.3",
+    "vue-template-compiler": "^2.4.4",
+    "vue-typescript-import-dts": "^2.1.0",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
   }
 }
