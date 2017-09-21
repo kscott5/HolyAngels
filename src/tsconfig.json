@@ -1,8 +1,9 @@
 {
     "compileOnSave": true,
     "compilerOptions": {
-        "target": "es2016",
-        "module": "es6",
+        "sourceMap": true,
+        "target": "es2015",
+        "module": "es2015",
         "moduleResolution": "node",
         //"outDir": "./wwwroot/js",
         "rootDir": "./",
