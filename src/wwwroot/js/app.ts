@@ -1,6 +1,6 @@
 import Vue from "vue";
 
-export namespace global {
+export namespace HolyAngels {
     export var adminConfig = {
         environment: 'development',
         loglevel: 1
