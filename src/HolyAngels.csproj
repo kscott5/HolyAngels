@@ -11,7 +11,7 @@
     <UserSecretsId>xyz123</UserSecretsId>
   </PropertyGroup>
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <!-- Disabled to provide custom <Compile/> -->
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
