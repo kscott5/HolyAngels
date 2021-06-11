@@ -23,7 +23,7 @@ namespace HolyAngels.Controllers
 
         public IActionResult Index([FromServices] QuoteService quoteService)
         {   
-            var model = this.PageService.GetPage("hoME");
+            var model = this.PageService.GetPage("Home");
             model.Quote = quoteService.GetQuoteOfDay();
             
             return View(model);
