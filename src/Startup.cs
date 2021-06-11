@@ -29,7 +29,9 @@ namespace HolyAngels
                 options.HeaderName = "X-XSRF-TOKEN";
             });
 
-            services.AddMvc();
+            services.AddMvc(options => {
+				options.EnableEndpointRouting = false;
+			});
 
             AdminDataService.RegisterClassMaps();
             
