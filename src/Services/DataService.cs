@@ -27,7 +27,7 @@ namespace HolyAngels.Services {
 
             this.Configuration = configuration.GetSection("DataService");
 
-            var url = this.Configuration["Url"]?? "mongodb://localhost:6001/holyangels";            
+            var url = this.Configuration["Url"]?? "mongodb://localhost:27017/holyangels"; 
             var client = new MongoClient(url);
 
             var dbName = this.Configuration["DatabaseName"]?? "holyangels";
