@@ -1,5 +1,5 @@
 
-var conn = new Mongo("localhost:6001");
+var conn = new Mongo("localhost:27017");
 var db = conn.getDB("holyangels");
 
 //NOTE: Use db.collection.save(...) ensures inserts on new or updates on existing
