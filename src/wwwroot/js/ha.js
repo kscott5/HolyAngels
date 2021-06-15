@@ -20,7 +20,7 @@ HolyAngels.prototype.initEventCalendar = () => {
 	var el = document.querySelector('#calendar');
 	var calendar = new FullCalendar.Calendar(el, {
 		plugins: ['dayGrid'],
-		defaultView: 'dayGridMonth'
+		defaultView: 'dayGridMonth',
     	header: {
         	left: 'prev,next today',
             center: 'title',
