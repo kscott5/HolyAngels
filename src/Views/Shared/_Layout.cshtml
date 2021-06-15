@@ -8,36 +8,32 @@
     <meta name="SUBJECT" content="@Model.MetaSubject" />
     <meta name="DESCRIPTION" content="@Model.MetaDescription"/>
     
-    <title>>@Model.PageTitle</title>
+    <title>@Model.PageTitle</title>
 
 	<environment include="Production">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.print.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	</environment>
 
-    <environment include="Development">
-        <link href="~/lib/fullcalendar/dist/fullcalendar.css" rel="Stylesheet" type="text/css" />
-        <link href="~/lib/fullcalendar/dist/fullcalendar.print.css" rel="Stylesheet" type="text/css" />
-        <link href="~/css/themes/base/jquery.ui.all.css" rel="Stylesheet" type="text/css" />
-	</environment>
-
-    <link href="~/css/adt_higherground/style.css" rel="stylesheet" type="text/css" />
-    <link href="~/css/rte.css" rel="Stylesheet" type="text/css" />
-
-	<environment include="Production">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script src="~/js/ha.js"></script>
-	</environment>
+</environment>
 
     <environment include="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/moment/moment.js"></script>
-        <script src="~/lib/fullcalendar/dist/fullcalendar.js"></script>
-        <script src="~/js/ha.js"></script>
-    </environment>
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.print.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+   		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	</environment>
+
+    <link href="~/css/adt_higherground/style.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/rte.css" rel="Stylesheet" type="text/css" />
+    <script src="~/js/ha.js"></script>
 
 </head>
 <body>
