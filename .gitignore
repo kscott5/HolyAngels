@@ -8,3 +8,4 @@ package-lock.json
 src/wwwroot/lib/
 src/wwwroot/js/*.min.js
 bundle*.js
+tags
